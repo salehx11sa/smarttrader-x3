@@ -1,0 +1,52 @@
+name: x3
+run-name: x3 ${{ github.event_name }} ${{ inputs.replay_date }}
+on:
+  schedule:
+    - cron: '45 11 * * 1-5'
+    - cron: '30 12 * * 1-5'
+    - cron: '5 13 * * 1-5'
+    - cron: '40 13 * * 1-5'
+    - cron: '15 14 * * 1-5'
+    - cron: '30 15 * * 1-5'
+    - cron: '30 16 * * 1-5'
+    - cron: '30 17 * * 1-5'
+    - cron: '30 18 * * 1-5'
+    - cron: '10 19 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      replay_date:
+        description: 'dry pipeline check on a past session (YYYY-MM-DD), empty = normal run'
+        required: false
+        default: ''
+concurrency:
+  group: x3-${{ inputs.replay_date && 'replay' || 'session' }}
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: tests
+        run: node test_x3.cjs
+      - name: run
+        id: run
+        run: node x3.cjs
+        env:
+          APCA_KEY: ${{ secrets.APCA_KEY }}
+          APCA_SEC: ${{ secrets.APCA_SEC }}
+          TRADING_ENABLED: ${{ !inputs.replay_date && vars.TRADING_ENABLED || 'false' }}
+          X3_REPLAY_DATE: ${{ inputs.replay_date }}
+      - name: save report
+        if: always()
+        run: |
+          git config user.name "x3-bot"
+          git config user.email "x3-bot@users.noreply.github.com"
+          git add reports || true
+          git commit -q -m "x3 report ${{ github.run_id }}" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase && git push -q && break; sleep 7; done
