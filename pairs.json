@@ -1,0 +1,112 @@
+{
+ "method": "Gatev distance: 252d formation ending 2026-10-23, normalized adj close, min SSD, disjoint greedy top 10",
+ "formation": [
+  "2025-10-23",
+  "2026-10-23"
+ ],
+ "universe_n": 150,
+ "open_k_sigma": 2.0,
+ "base_date": "2026-10-23",
+ "pairs": [
+  {
+   "a": "AXP",
+   "b": "COF",
+   "ssd": 0.40051,
+   "sigma": 0.039841,
+   "base_a": 313.22,
+   "base_b": 201.34,
+   "name_a": "American Express Company",
+   "name_b": "Capital One Financial"
+  },
+  {
+   "a": "BAC",
+   "b": "JPM",
+   "ssd": 0.465151,
+   "sigma": 0.033676,
+   "base_a": 50.56,
+   "base_b": 331.58,
+   "name_a": "Bank of America Corporation",
+   "name_b": "JPMorgan Chase & Co."
+  },
+  {
+   "a": "HD",
+   "b": "SYK",
+   "ssd": 0.516953,
+   "sigma": 0.03909,
+   "base_a": 319.83,
+   "base_b": 307.15,
+   "name_a": "Home Depot, Inc.",
+   "name_b": "Stryker Corporation"
+  },
+  {
+   "a": "COP",
+   "b": "XOM",
+   "ssd": 0.584171,
+   "sigma": 0.04689,
+   "base_a": 150.8,
+   "base_b": 183.21,
+   "name_a": "ConocoPhillips",
+   "name_b": "ExxonMobil Holdings Corporation"
+  },
+  {
+   "a": "KO",
+   "b": "PM",
+   "ssd": 0.595509,
+   "sigma": 0.04524,
+   "base_a": 92.71,
+   "base_b": 199.47,
+   "name_a": "Coca-Cola Company",
+   "name_b": "Philip Morris International Inc."
+  },
+  {
+   "a": "DIS",
+   "b": "MA",
+   "ssd": 0.651991,
+   "sigma": 0.050429,
+   "base_a": 112.52,
+   "base_b": 623.6,
+   "name_a": "The Walt Disney Company",
+   "name_b": "Mastercard Incorporated"
+  },
+  {
+   "a": "GILD",
+   "b": "PFE",
+   "ssd": 0.68126,
+   "sigma": 0.047204,
+   "base_a": 156.04,
+   "base_b": 30.03,
+   "name_a": "Gilead Sciences, Inc. Common Stock",
+   "name_b": "Pfizer Inc."
+  },
+  {
+   "a": "AZO",
+   "b": "TMUS",
+   "ssd": 0.794848,
+   "sigma": 0.054945,
+   "base_a": 3200.76,
+   "base_b": 146.54,
+   "name_a": "AutoZone, Inc.",
+   "name_b": "T-Mobile US, Inc. Common Stock"
+  },
+  {
+   "a": "COST",
+   "b": "NEE",
+   "ssd": 0.801118,
+   "sigma": 0.043856,
+   "base_a": 1003.32,
+   "base_b": 82.1,
+   "name_a": "Costco Wholesale Corporation Common Stock",
+   "name_b": "NextEra Energy, Inc."
+  },
+  {
+   "a": "DE",
+   "b": "JNJ",
+   "ssd": 0.822806,
+   "sigma": 0.055851,
+   "base_a": 646.15,
+   "base_b": 263.81,
+   "name_a": "Deere & Company",
+   "name_b": "Johnson & Johnson"
+  }
+ ]
+}
