@@ -1,0 +1,165 @@
+{
+ "version": "x3-1.2",
+ "trading": true,
+ "startedAt": "2026-10-28T18:46:03.293Z",
+ "runId": "40747299621",
+ "phases": {
+  "pairs": {
+   "at": "2026-10-28T19:45:00.464Z",
+   "acts": [
+    {
+     "pair": "AXP/COF",
+     "pa": 318.44,
+     "pb": 205.2,
+     "act": "none",
+     "spread": -0.002505948158956217,
+     "sigma": 0.039841
+    },
+    {
+     "pair": "BAC/JPM",
+     "pa": 50.92,
+     "pb": 339.06,
+     "act": "none",
+     "spread": -0.015438405379384346,
+     "sigma": 0.033676
+    },
+    {
+     "pair": "HD/SYK",
+     "pa": 317.875,
+     "pb": 304.19,
+     "act": "none",
+     "spread": 0.0035243628557779516,
+     "sigma": 0.03909
+    },
+    {
+     "pair": "COP/XOM",
+     "pa": 149.24,
+     "pb": 182.57,
+     "act": "none",
+     "spread": -0.006851568484629422,
+     "sigma": 0.04689
+    },
+    {
+     "pair": "KO/PM",
+     "pa": 91.795,
+     "pb": 203.1,
+     "act": "none",
+     "spread": -0.02806771078943271,
+     "sigma": 0.04524
+    },
+    {
+     "pair": "DIS/MA",
+     "pa": 109.145,
+     "pb": 613.62,
+     "act": "none",
+     "spread": -0.013990818993735443,
+     "sigma": 0.050429
+    },
+    {
+     "pair": "GILD/PFE",
+     "pa": 159.39,
+     "pb": 29.37,
+     "act": "none",
+     "spread": 0.043446876117986144,
+     "sigma": 0.047204
+    },
+    {
+     "pair": "AZO/TMUS",
+     "pa": 3156.15,
+     "pb": 146.08,
+     "act": "none",
+     "spread": -0.010798240232330114,
+     "sigma": 0.054945
+    },
+    {
+     "pair": "COST/NEE",
+     "pa": 982.91,
+     "pb": 81.065,
+     "act": "none",
+     "spread": -0.007735885678063048,
+     "sigma": 0.043856
+    },
+    {
+     "pair": "DE/JNJ",
+     "pa": 639.52,
+     "pb": 271.375,
+     "act": "none",
+     "spread": -0.038936716379915026,
+     "sigma": 0.055851
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -511.1500840000008,
+   "fills": 26,
+   "halted": false,
+   "at": "2026-10-28T19:56:57.367Z"
+  },
+  "fade": {
+   "pnl": -555.79,
+   "fills": 20,
+   "halted": false,
+   "at": "2026-10-28T19:56:57.367Z"
+  },
+  "pair": {
+   "pnl": 0,
+   "fills": 0,
+   "halted": false,
+   "at": "2026-10-28T19:56:57.367Z"
+  }
+ },
+ "date": "2026-10-28",
+ "open": "2026-10-28T13:30:00.000Z",
+ "close": "2026-10-28T20:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-10-28T19:55:05.336Z",
+   "symbol": "MAS",
+   "qty": "75",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261028-MAS",
+   "sent": true,
+   "result": "pending_new",
+   "id": "b834c689-b78f-4f29-be81-858f62d1a8ac"
+  },
+  {
+   "at": "2026-10-28T19:55:27.588Z",
+   "symbol": "WEN",
+   "qty": "843",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261028-WEN",
+   "sent": true,
+   "result": "pending_new",
+   "id": "1eb990c1-8b36-46d9-9a11-a45794e38a47"
+  },
+  {
+   "at": "2026-10-28T19:55:36.739Z",
+   "symbol": "WM",
+   "qty": "26",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261028-WM",
+   "sent": true,
+   "result": "pending_new",
+   "id": "4fd8f70c-f168-4dfc-a14a-9fa43336c5ff"
+  }
+ ],
+ "log": [
+  "18:46:03Z books {\"orb\":{\"pnl\":-499.9700840000005,\"fills\":24,\"halted\":false,\"at\":\"2026-10-28T18:46:03.885Z\"},\"fade\":{\"pnl\":-530.5000000000018,\"fills\":18,\"halted\":false,\"at\":\"2026-10-28T18:46:03.885Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-10-28T18:46:03.885Z\"}}",
+  "19:50:00Z cancel entry orb-20261028-ETSY",
+  "19:50:00Z cancel entry orb-20261028-UCTT",
+  "19:55:05Z ORDER fadex-20261028-MAS pending_new",
+  "19:55:27Z ORDER fadex-20261028-WEN pending_new",
+  "19:55:36Z ORDER orbx-20261028-WM pending_new",
+  "19:56:57Z books {\"orb\":{\"pnl\":-511.1500840000008,\"fills\":26,\"halted\":false,\"at\":\"2026-10-28T19:56:57.367Z\"},\"fade\":{\"pnl\":-555.79,\"fills\":20,\"halted\":false,\"at\":\"2026-10-28T19:56:57.367Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-10-28T19:56:57.367Z\"}}"
+ ],
+ "calls": 170,
+ "endedAt": "2026-10-28T19:56:57.367Z"
+}
