@@ -7,7 +7,7 @@
    Usage: node x3.cjs            (env: APCA_KEY, APCA_SEC, TRADING_ENABLED, X3_MAX_MIN optional)                        */
 'use strict';
 const fs = require('fs'), path = require('path');
-const VERSION = 'x3-1.0';
+const VERSION = 'x3-1.2';
 const PAPER = 'https://paper-api.alpaca.markets';
 const DATA = 'https://data.alpaca.markets';
 const PAIRS = JSON.parse(fs.readFileSync(path.join(__dirname, 'pairs.json'), 'utf8'));
@@ -170,7 +170,15 @@ async function main() {
       const ex = new Set([...orb.map(x => x.sym), ...pairSyms, ...live]);
       const fade = halted.fade ? [] : fadePick(rows, ex);
       rep.phases.decisions = { at: new Date().toISOString(), withBar: U.rows.filter(r => r.bar).length, orb, fade };
-      for (const x of orb) await submit({ symbol: x.sym, qty: String(x.qty), side: x.dir === 'long' ? 'buy' : 'sell', type: 'stop', stop_price: x.entry.toFixed(2), time_in_force: 'day', order_class: 'oto', stop_loss: { stop_price: x.stop.toFixed(2) }, client_order_id: `orb-${D}-${x.sym}` });
+      for (const x of orb) {
+        const r1 = await submit({ symbol: x.sym, qty: String(x.qty), side: x.dir === 'long' ? 'buy' : 'sell', type: 'stop', stop_price: x.entry.toFixed(2), time_in_force: 'day', order_class: 'oto', stop_loss: { stop_price: x.stop.toFixed(2) }, client_order_id: `orb-${D}-${x.sym}` });
+        const last = orders[orders.length - 1];
+        if (!r1 && TRADING && /stop price must be (greater|less) than current price/.test(last.result || '')) { /* x3-1.2: the opening range already broke before 09:35:15 -> the stop entry would trigger at once: enter at market, stop 0.1 ATR from the latest price */
+          const lt = (await api(DATA, 'GET', `/v2/stocks/trades/latest?symbols=${x.sym}&feed=iex`)).j.trades || {}; const px = lt[x.sym] && lt[x.sym].p;
+          if (px) { const st = x.dir === 'long' ? dn2(px - R.orb.stopAtrFrac * x.atr) : up2(px + R.orb.stopAtrFrac * x.atr);
+            await submit({ symbol: x.sym, qty: String(x.qty), side: x.dir === 'long' ? 'buy' : 'sell', type: 'market', time_in_force: 'day', order_class: 'oto', stop_loss: { stop_price: st.toFixed(2) }, client_order_id: `orbm-${D}-${x.sym}` }); }
+        }
+      }
       for (const x of fade) await submit({ symbol: x.sym, qty: String(x.qty), side: 'sell', type: 'market', time_in_force: 'day', order_class: 'oto', stop_loss: { stop_price: x.stop.toFixed(2) }, client_order_id: `fade-${D}-${x.sym}` });
     }
   }
@@ -178,8 +186,9 @@ async function main() {
   if (clock.now() >= openMs) await closeStale(await todays(), await positions(), pairSyms, D);
   /* 5) wait for the pairs decision, cancel, flatten */
   const tPair = closeMs - R.pair.minBeforeClose * 60000, tCancel = closeMs - R.cancelMinBeforeClose * 60000, tFlat = closeMs - R.flattenMinBeforeClose * 60000;
-  if (deadline < tPair) { say('deadline before pairs time; waiting, next run continues'); await sleepUntil(deadline); return finish(rep); }
-  await sleepUntil(Math.max(clock.now(), tPair));
+  /* x3-1.1: protection loop until the pairs time (Alpaca cancelled one OTO stop leg at fill on 2026-10-27) */
+  while (clock.now() < Math.min(tPair, deadline)) { if (clock.now() >= openMs) await protectPositions(D, pairSyms); await sleep(Math.min(60000, Math.max(0, Math.min(tPair, deadline) - clock.now()))); }
+  if (deadline < tPair) { say('deadline before pairs time; next run continues'); return finish(rep); }
   if (clock.now() < tCancel) await doPairs(rep, D, lastDay || halted.pair, await positions(), halted.pair);
   if (deadline < tCancel) { await sleepUntil(deadline); return finish(rep); }
   await sleepUntil(tCancel);
@@ -224,6 +233,26 @@ async function buildUniverse(today, openMs, pairSyms) {
 async function bookOf(sym) { /* book of the latest orb/fade entry on this symbol */
   const o = (await api(PAPER, 'GET', `/v2/orders?status=all&symbols=${sym}&limit=100&direction=desc&after=${R.start}T00:00:00Z`)).j.find(x => /^(orb|fade)-\d{8}-/.test(x.client_order_id));
   return o ? o.client_order_id.split('-')[0] : 'other';
+}
+async function protectPositions(D, pairSyms) { /* x3-1.1: every open ORB/FADE position must have a broker stop; if the price is already beyond the planned stop, close */
+  try {
+    const pos = (await api(PAPER, 'GET', '/v2/positions')).j; const opn = (await api(PAPER, 'GET', '/v2/orders?status=open&limit=500&nested=false')).j;
+    const need = pos.filter(p => !pairSyms.has(p.symbol) && !opn.some(o => o.symbol === p.symbol && /stop/.test(o.type) && o.side === (+p.qty > 0 ? 'sell' : 'buy')));
+    if (!need.length) return;
+    const tod = (await api(PAPER, 'GET', `/v2/orders?status=all&after=${new Date(clock.now() - 16 * 3600e3).toISOString()}&limit=500&nested=true`)).j;
+    const lt = (await api(DATA, 'GET', `/v2/stocks/trades/latest?symbols=${need.map(p => p.symbol).join(',')}&feed=iex`)).j.trades || {};
+    const toClose = [];
+    for (const p of need) {
+      const e = tod.find(o => o.symbol === p.symbol && [`orbm-${D}-${p.symbol}`, `orb-${D}-${p.symbol}`, `fade-${D}-${p.symbol}`].includes(o.client_order_id) && +o.filled_qty > 0);
+      const stop = e && e.legs && e.legs[0] ? +e.legs[0].stop_price : null; const px = lt[p.symbol] && lt[p.symbol].p;
+      if (!e || !stop || !px) { say('PROTECT cannot resolve', p.symbol, !!e, stop, px); continue; }
+      const book = e.client_order_id.split('-')[0].replace('orbm', 'orb'); const n = 1 + tod.filter(o => o.client_order_id.startsWith(`${book}p-${D}-${p.symbol}`)).length; const cid = `${book}p-${D}-${p.symbol}-${n}`;
+      const beyond = +p.qty > 0 ? px <= stop : px >= stop;
+      say('PROTECT', p.symbol, p.qty, 'px', px, 'stop', stop, beyond ? 'close' : 'stop');
+      if (beyond) toClose.push({ p, cid }); else await submit({ symbol: p.symbol, qty: String(Math.abs(+p.qty)), side: +p.qty > 0 ? 'sell' : 'buy', type: 'stop', stop_price: stop.toFixed(2), time_in_force: 'day', client_order_id: cid });
+    }
+    if (toClose.length) await closeMany(toClose);
+  } catch (err) { say('PROTECT error', err.message); }
 }
 async function closeStale(tod, pos, pairSyms, D) {
   const mine = new Set(tod.filter(o => o.client_order_id.startsWith(`orb-${D}`) || o.client_order_id.startsWith(`fade-${D}`)).map(o => o.symbol));
