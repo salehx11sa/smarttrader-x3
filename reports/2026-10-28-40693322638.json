@@ -1,0 +1,770 @@
+{
+ "version": "x3-1.0",
+ "trading": true,
+ "startedAt": "2026-10-28T13:05:48.198Z",
+ "runId": "40693322638",
+ "phases": {
+  "universe": {
+   "n": 2031,
+   "at": "2026-10-28T13:08:08.040Z"
+  },
+  "decisions": {
+   "at": "2026-10-28T13:35:56.547Z",
+   "withBar": 1608,
+   "orb": [
+    {
+     "sym": "AXGN",
+     "rvol": 46.49083769633508,
+     "dir": "long",
+     "atr": 1.3654999999999993,
+     "h": 45.94,
+     "l": 43.58,
+     "c": 45.58,
+     "entry": 45.94,
+     "stop": 45.8,
+     "qty": 130
+    },
+    {
+     "sym": "DAN",
+     "rvol": 26.21239579557811,
+     "dir": "short",
+     "atr": 1.0135714285714292,
+     "h": 26.31,
+     "l": 25.77,
+     "c": 25.8,
+     "entry": 25.77,
+     "stop": 25.88,
+     "qty": 232
+    },
+    {
+     "sym": "UCTT",
+     "rvol": 19.77102859176652,
+     "dir": "short",
+     "atr": 4.484642857142858,
+     "h": 55.31,
+     "l": 51.86,
+     "c": 52.38,
+     "entry": 51.86,
+     "stop": 52.31,
+     "qty": 115
+    },
+    {
+     "sym": "XYL",
+     "rvol": 18.775641025641026,
+     "dir": "short",
+     "atr": 3.2192714285714286,
+     "h": 91.005,
+     "l": 88.92,
+     "c": 89.635,
+     "entry": 88.92,
+     "stop": 89.25,
+     "qty": 67
+    },
+    {
+     "sym": "MIR",
+     "rvol": 18.429730117714616,
+     "dir": "long",
+     "atr": 0.6687857142857145,
+     "h": 15.74,
+     "l": 15.28,
+     "c": 15.59,
+     "entry": 15.74,
+     "stop": 15.67,
+     "qty": 381
+    },
+    {
+     "sym": "APH",
+     "rvol": 16.006083664338007,
+     "dir": "short",
+     "atr": 3.111071428571431,
+     "h": 83.565,
+     "l": 81.8,
+     "c": 81.99,
+     "entry": 81.8,
+     "stop": 82.12,
+     "qty": 73
+    },
+    {
+     "sym": "CAKE",
+     "rvol": 15.365079365079366,
+     "dir": "long",
+     "atr": 3.756057142857145,
+     "h": 104.26,
+     "l": 98.13,
+     "c": 104.25,
+     "entry": 104.26,
+     "stop": 103.88,
+     "qty": 57
+    },
+    {
+     "sym": "WPC",
+     "rvol": 15.083378647815842,
+     "dir": "long",
+     "atr": 1.3106000000000004,
+     "h": 62.81,
+     "l": 62.49,
+     "c": 62.81,
+     "entry": 62.81,
+     "stop": 62.67,
+     "qty": 95
+    },
+    {
+     "sym": "NXPI",
+     "rvol": 13.83659177122848,
+     "dir": "long",
+     "atr": 9.089278571428574,
+     "h": 245.51,
+     "l": 235.52,
+     "c": 242.68,
+     "entry": 245.51,
+     "stop": 244.6,
+     "qty": 24
+    },
+    {
+     "sym": "PPG",
+     "rvol": 12.909345944212888,
+     "dir": "short",
+     "atr": 2.784857142857142,
+     "h": 118.145,
+     "l": 116.5,
+     "c": 117.415,
+     "entry": 116.5,
+     "stop": 116.78,
+     "qty": 51
+    },
+    {
+     "sym": "WM",
+     "rvol": 12.263612531694529,
+     "dir": "short",
+     "atr": 4.631064285714284,
+     "h": 227.98,
+     "l": 225.17,
+     "c": 227,
+     "entry": 225.17,
+     "stop": 225.64,
+     "qty": 26
+    },
+    {
+     "sym": "GEHC",
+     "rvol": 11.70709305723709,
+     "dir": "short",
+     "atr": 1.806428571428572,
+     "h": 77.77,
+     "l": 76.58,
+     "c": 76.775,
+     "entry": 76.58,
+     "stop": 76.77,
+     "qty": 78
+    },
+    {
+     "sym": "REPL",
+     "rvol": 11.644286105782406,
+     "dir": "short",
+     "atr": 0.758057142857143,
+     "h": 13.125,
+     "l": 12.76,
+     "c": 12.845,
+     "entry": 12.76,
+     "stop": 12.84,
+     "qty": 470
+    },
+    {
+     "sym": "FRVO",
+     "rvol": 11.621637426900584,
+     "dir": "short",
+     "atr": 0.8156999999999996,
+     "h": 8.74,
+     "l": 8.53,
+     "c": 8.535,
+     "entry": 8.53,
+     "stop": 8.62,
+     "qty": 703
+    },
+    {
+     "sym": "MOD",
+     "rvol": 11.243802238277377,
+     "dir": "short",
+     "atr": 9.979207142857138,
+     "h": 143.99,
+     "l": 140.88,
+     "c": 141.15,
+     "entry": 140.88,
+     "stop": 141.88,
+     "qty": 42
+    },
+    {
+     "sym": "CSGP",
+     "rvol": 10.383400239820658,
+     "dir": "short",
+     "atr": 1.402657142857143,
+     "h": 30.66,
+     "l": 29.13,
+     "c": 29.15,
+     "entry": 29.13,
+     "stop": 29.28,
+     "qty": 205
+    },
+    {
+     "sym": "ETSY",
+     "rvol": 10.23344278049171,
+     "dir": "long",
+     "atr": 3.810714285714284,
+     "h": 94.13,
+     "l": 91.15,
+     "c": 93.26,
+     "entry": 94.13,
+     "stop": 93.74,
+     "qty": 63
+    },
+    {
+     "sym": "VLTO",
+     "rvol": 10.119309262166405,
+     "dir": "long",
+     "atr": 1.9816785714285723,
+     "h": 102.86,
+     "l": 102.67,
+     "c": 102.815,
+     "entry": 102.86,
+     "stop": 102.66,
+     "qty": 58
+    },
+    {
+     "sym": "OTEX",
+     "rvol": 9.950806768988588,
+     "dir": "long",
+     "atr": 0.8153571428571433,
+     "h": 27.24,
+     "l": 26.87,
+     "c": 27.2,
+     "entry": 27.24,
+     "stop": 27.15,
+     "qty": 220
+    },
+    {
+     "sym": "EPRT",
+     "rvol": 9.141818181818183,
+     "dir": "short",
+     "atr": 0.6538999999999999,
+     "h": 26.625,
+     "l": 26.5,
+     "c": 26.5,
+     "entry": 26.5,
+     "stop": 26.57,
+     "qty": 226
+    }
+   ],
+   "fade": [
+    {
+     "sym": "WEN",
+     "gap": 0.14495114006514664,
+     "z": 5.659648929817938,
+     "atr": 0.2596428571428572,
+     "ref": 7.115,
+     "stop": 7.25,
+     "qty": 843
+    },
+    {
+     "sym": "EVR",
+     "gap": 0.07677210805818513,
+     "z": 4.519219608123501,
+     "atr": 9.024528571428576,
+     "ref": 286.73,
+     "stop": 291.25,
+     "qty": 20
+    },
+    {
+     "sym": "VRT",
+     "gap": 0.15362485615650168,
+     "z": 4.465921156974296,
+     "atr": 11.656785714285716,
+     "ref": 232.47,
+     "stop": 238.3,
+     "qty": 25
+    },
+    {
+     "sym": "MAS",
+     "gap": 0.06871092191033656,
+     "z": 3.648837390982317,
+     "atr": 2.0442857142857127,
+     "ref": 79.46,
+     "stop": 80.49,
+     "qty": 75
+    },
+    {
+     "sym": "ICLR",
+     "gap": 0.09563886763580709,
+     "z": 3.414191694287844,
+     "atr": 7.85559285714286,
+     "ref": 199.515,
+     "stop": 203.45,
+     "qty": 30
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -293.48005700000067,
+   "fills": 16,
+   "halted": false,
+   "at": "2026-10-28T13:05:48.798Z"
+  },
+  "fade": {
+   "pnl": -312.6100000000006,
+   "fills": 10,
+   "halted": false,
+   "at": "2026-10-28T13:05:48.798Z"
+  },
+  "pair": {
+   "pnl": 0,
+   "fills": 0,
+   "halted": false,
+   "at": "2026-10-28T13:05:48.798Z"
+  }
+ },
+ "date": "2026-10-28",
+ "open": "2026-10-28T13:30:00.000Z",
+ "close": "2026-10-28T20:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-10-28T13:35:56.548Z",
+   "symbol": "AXGN",
+   "qty": "130",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "45.94",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "45.80"
+   },
+   "client_order_id": "orb-20261028-AXGN",
+   "sent": true,
+   "result": "pending_new",
+   "id": "33345f78-6ccc-4063-9af1-37ec98b8f4e1"
+  },
+  {
+   "at": "2026-10-28T13:35:56.809Z",
+   "symbol": "DAN",
+   "qty": "232",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "25.77",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "25.88"
+   },
+   "client_order_id": "orb-20261028-DAN",
+   "sent": true,
+   "result": "pending_new",
+   "id": "c0b40cf0-5ff5-4060-ad38-792174c3a563"
+  },
+  {
+   "at": "2026-10-28T13:35:56.869Z",
+   "symbol": "UCTT",
+   "qty": "115",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "51.86",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "52.31"
+   },
+   "client_order_id": "orb-20261028-UCTT",
+   "sent": true,
+   "result": "pending_new",
+   "id": "af59af2a-3829-441b-88bc-fb7ea7fb2860"
+  },
+  {
+   "at": "2026-10-28T13:35:56.932Z",
+   "symbol": "XYL",
+   "qty": "67",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "88.92",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "89.25"
+   },
+   "client_order_id": "orb-20261028-XYL",
+   "sent": true,
+   "result": "pending_new",
+   "id": "cbd15a23-6411-4f9d-acc0-f6023c8423fa"
+  },
+  {
+   "at": "2026-10-28T13:35:56.998Z",
+   "symbol": "MIR",
+   "qty": "381",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "15.74",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "15.67"
+   },
+   "client_order_id": "orb-20261028-MIR",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.071Z",
+   "symbol": "APH",
+   "qty": "73",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "81.80",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "82.12"
+   },
+   "client_order_id": "orb-20261028-APH",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.133Z",
+   "symbol": "CAKE",
+   "qty": "57",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "104.26",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "103.88"
+   },
+   "client_order_id": "orb-20261028-CAKE",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.192Z",
+   "symbol": "WPC",
+   "qty": "95",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "62.81",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "62.67"
+   },
+   "client_order_id": "orb-20261028-WPC",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.255Z",
+   "symbol": "NXPI",
+   "qty": "24",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "245.51",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "244.60"
+   },
+   "client_order_id": "orb-20261028-NXPI",
+   "sent": true,
+   "result": "pending_new",
+   "id": "5860e39d-8e6a-4d7a-9ead-757edd210e69"
+  },
+  {
+   "at": "2026-10-28T13:35:57.314Z",
+   "symbol": "PPG",
+   "qty": "51",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "116.50",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "116.78"
+   },
+   "client_order_id": "orb-20261028-PPG",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.372Z",
+   "symbol": "WM",
+   "qty": "26",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "225.17",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "225.64"
+   },
+   "client_order_id": "orb-20261028-WM",
+   "sent": true,
+   "result": "pending_new",
+   "id": "fbdbea79-12e5-4701-a5d6-f5b4ddeca969"
+  },
+  {
+   "at": "2026-10-28T13:35:57.447Z",
+   "symbol": "GEHC",
+   "qty": "78",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "76.58",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "76.77"
+   },
+   "client_order_id": "orb-20261028-GEHC",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.504Z",
+   "symbol": "REPL",
+   "qty": "470",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "12.76",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "12.84"
+   },
+   "client_order_id": "orb-20261028-REPL",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.564Z",
+   "symbol": "FRVO",
+   "qty": "703",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "8.53",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "8.62"
+   },
+   "client_order_id": "orb-20261028-FRVO",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.625Z",
+   "symbol": "MOD",
+   "qty": "42",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "140.88",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "141.88"
+   },
+   "client_order_id": "orb-20261028-MOD",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.685Z",
+   "symbol": "CSGP",
+   "qty": "205",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "29.13",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "29.28"
+   },
+   "client_order_id": "orb-20261028-CSGP",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.742Z",
+   "symbol": "ETSY",
+   "qty": "63",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "94.13",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "93.74"
+   },
+   "client_order_id": "orb-20261028-ETSY",
+   "sent": true,
+   "result": "pending_new",
+   "id": "c07a3422-54de-40df-a0d4-1b0ddc87d0bd"
+  },
+  {
+   "at": "2026-10-28T13:35:57.803Z",
+   "symbol": "VLTO",
+   "qty": "58",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "102.86",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "102.66"
+   },
+   "client_order_id": "orb-20261028-VLTO",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.861Z",
+   "symbol": "OTEX",
+   "qty": "220",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "27.24",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "27.15"
+   },
+   "client_order_id": "orb-20261028-OTEX",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.920Z",
+   "symbol": "EPRT",
+   "qty": "226",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "26.50",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "26.57"
+   },
+   "client_order_id": "orb-20261028-EPRT",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-10-28T13:35:57.979Z",
+   "symbol": "WEN",
+   "qty": "843",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "7.25"
+   },
+   "client_order_id": "fade-20261028-WEN",
+   "sent": true,
+   "result": "pending_new",
+   "id": "645451e2-f9ce-40a8-94c2-f2cbab612c23"
+  },
+  {
+   "at": "2026-10-28T13:35:58.040Z",
+   "symbol": "EVR",
+   "qty": "20",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "291.25"
+   },
+   "client_order_id": "fade-20261028-EVR",
+   "sent": true,
+   "result": "pending_new",
+   "id": "ba3f41cf-62c4-43e5-a0a7-71f83661ead1"
+  },
+  {
+   "at": "2026-10-28T13:35:58.099Z",
+   "symbol": "VRT",
+   "qty": "25",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "238.30"
+   },
+   "client_order_id": "fade-20261028-VRT",
+   "sent": true,
+   "result": "pending_new",
+   "id": "baf67459-4de9-404b-9d72-cbf4bd131a40"
+  },
+  {
+   "at": "2026-10-28T13:35:58.158Z",
+   "symbol": "MAS",
+   "qty": "75",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "80.49"
+   },
+   "client_order_id": "fade-20261028-MAS",
+   "sent": true,
+   "result": "pending_new",
+   "id": "12f66d8b-bf71-4c6d-bb44-8925cf26ef82"
+  },
+  {
+   "at": "2026-10-28T13:35:58.217Z",
+   "symbol": "ICLR",
+   "qty": "30",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "203.45"
+   },
+   "client_order_id": "fade-20261028-ICLR",
+   "sent": true,
+   "result": "pending_new",
+   "id": "4d9fbf4f-8c81-4c2a-aeae-4eacb134db7c"
+  }
+ ],
+ "log": [
+  "13:05:48Z books {\"orb\":{\"pnl\":-293.48005700000067,\"fills\":16,\"halted\":false,\"at\":\"2026-10-28T13:05:48.798Z\"},\"fade\":{\"pnl\":-312.6100000000006,\"fills\":10,\"halted\":false,\"at\":\"2026-10-28T13:05:48.798Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-10-28T13:05:48.798Z\"}}",
+  "13:05:49Z assets 5701",
+  "13:06:45Z liquid universe 2031",
+  "13:35:56Z ORDER orb-20261028-AXGN pending_new",
+  "13:35:56Z ORDER orb-20261028-DAN pending_new",
+  "13:35:56Z ORDER orb-20261028-UCTT pending_new",
+  "13:35:56Z ORDER orb-20261028-XYL pending_new",
+  "13:35:57Z ORDER orb-20261028-MIR rejected:stop price must be greater than current price",
+  "13:35:57Z ORDER orb-20261028-APH rejected:stop price must be less than current price",
+  "13:35:57Z ORDER orb-20261028-CAKE rejected:stop price must be greater than current price",
+  "13:35:57Z ORDER orb-20261028-WPC rejected:stop price must be greater than current price",
+  "13:35:57Z ORDER orb-20261028-NXPI pending_new",
+  "13:35:57Z ORDER orb-20261028-PPG rejected:stop price must be less than current price",
+  "13:35:57Z ORDER orb-20261028-WM pending_new",
+  "13:35:57Z ORDER orb-20261028-GEHC rejected:stop price must be less than current price",
+  "13:35:57Z ORDER orb-20261028-REPL rejected:stop price must be less than current price",
+  "13:35:57Z ORDER orb-20261028-FRVO rejected:stop price must be less than current price",
+  "13:35:57Z ORDER orb-20261028-MOD rejected:stop price must be less than current price",
+  "13:35:57Z ORDER orb-20261028-CSGP rejected:stop price must be less than current price",
+  "13:35:57Z ORDER orb-20261028-ETSY pending_new",
+  "13:35:57Z ORDER orb-20261028-VLTO rejected:stop price must be greater than current price",
+  "13:35:57Z ORDER orb-20261028-OTEX rejected:stop price must be greater than current price",
+  "13:35:57Z ORDER orb-20261028-EPRT rejected:stop price must be less than current price",
+  "13:35:58Z ORDER fade-20261028-WEN pending_new",
+  "13:35:58Z ORDER fade-20261028-EVR pending_new",
+  "13:35:58Z ORDER fade-20261028-VRT pending_new",
+  "13:35:58Z ORDER fade-20261028-MAS pending_new",
+  "13:35:58Z ORDER fade-20261028-ICLR pending_new",
+  "13:35:58Z deadline before pairs time; waiting, next run continues"
+ ],
+ "calls": 231,
+ "endedAt": "2026-10-28T18:45:48.201Z"
+}
