@@ -1,0 +1,193 @@
+{
+ "version": "x3-1.2",
+ "trading": true,
+ "startedAt": "2026-10-29T18:46:03.398Z",
+ "runId": "40932566673",
+ "phases": {
+  "pairs": {
+   "at": "2026-10-29T19:45:00.430Z",
+   "acts": [
+    {
+     "pair": "AXP/COF",
+     "pa": 323.67,
+     "pb": 208.295,
+     "act": "none",
+     "spread": -0.0011804268149455677,
+     "sigma": 0.039841
+    },
+    {
+     "pair": "BAC/JPM",
+     "pa": 51.3,
+     "pb": 343.47,
+     "act": "none",
+     "spread": -0.021222540372486165,
+     "sigma": 0.033676
+    },
+    {
+     "pair": "HD/SYK",
+     "pa": 327.49,
+     "pb": 310.86,
+     "act": "none",
+     "spread": 0.011871434690889027,
+     "sigma": 0.03909
+    },
+    {
+     "pair": "COP/XOM",
+     "pa": 149.395,
+     "pb": 182.51,
+     "act": "none",
+     "spread": -0.005496223984970516,
+     "sigma": 0.04689
+    },
+    {
+     "pair": "KO/PM",
+     "pa": 93.085,
+     "pb": 208.83,
+     "act": "none",
+     "spread": -0.04287947842280371,
+     "sigma": 0.04524
+    },
+    {
+     "pair": "DIS/MA",
+     "pa": 110.84,
+     "pb": 636.88,
+     "act": "none",
+     "spread": -0.03622638136371792,
+     "sigma": 0.050429
+    },
+    {
+     "pair": "GILD/PFE",
+     "pa": 164.51,
+     "pb": 29.85,
+     "act": "none",
+     "spread": 0.06027495959564666,
+     "sigma": 0.047204
+    },
+    {
+     "pair": "AZO/TMUS",
+     "pa": 3139.21,
+     "pb": 147.48,
+     "act": "none",
+     "spread": -0.02564443873814304,
+     "sigma": 0.054945
+    },
+    {
+     "pair": "COST/NEE",
+     "pa": 995.035,
+     "pb": 82.045,
+     "act": "none",
+     "spread": -0.00758767008027883,
+     "sigma": 0.043856
+    },
+    {
+     "pair": "DE/JNJ",
+     "pa": 659.84,
+     "pb": 275.815,
+     "act": "none",
+     "spread": -0.024319204673127537,
+     "sigma": 0.055851
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -6727.810210999993,
+   "fills": 63,
+   "halted": true,
+   "at": "2026-10-29T19:57:23.846Z"
+  },
+  "fade": {
+   "pnl": -732.5100000000011,
+   "fills": 26,
+   "halted": false,
+   "at": "2026-10-29T19:57:23.846Z"
+  },
+  "pair": {
+   "pnl": 0,
+   "fills": 0,
+   "halted": false,
+   "at": "2026-10-29T19:57:23.846Z"
+  }
+ },
+ "date": "2026-10-29",
+ "open": "2026-10-29T13:30:00.000Z",
+ "close": "2026-10-29T20:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-10-29T18:46:06.858Z",
+   "symbol": "DRS",
+   "qty": "159",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "others-20261029-DRS",
+   "sent": true,
+   "result": "pending_new",
+   "id": "f419984d-cdbc-4bf0-a6f9-4ed7b96c3a1e"
+  },
+  {
+   "at": "2026-10-29T19:55:05.135Z",
+   "symbol": "EGO",
+   "qty": "190",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261029-EGO",
+   "sent": true,
+   "result": "pending_new",
+   "id": "b5732002-3010-4c84-a108-49db442c257b"
+  },
+  {
+   "at": "2026-10-29T19:55:31.353Z",
+   "symbol": "GKOS",
+   "qty": "27",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261029-GKOS",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 27, available: 0)"
+  },
+  {
+   "at": "2026-10-29T19:55:42.298Z",
+   "symbol": "HII",
+   "qty": "18",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261029-HII",
+   "sent": true,
+   "result": "pending_new",
+   "id": "ab4a9bb6-7e86-4b3d-90b9-b429dcea9308"
+  },
+  {
+   "at": "2026-10-29T19:56:02.819Z",
+   "symbol": "GKOS",
+   "qty": "27",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261029-GKOS-r2",
+   "sent": true,
+   "result": "pending_new",
+   "id": "fde31447-3b4b-49d1-bdd5-eb211143141a"
+  }
+ ],
+ "log": [
+  "18:46:03Z books {\"orb\":{\"pnl\":-335.5952109999962,\"fills\":61,\"halted\":false,\"at\":\"2026-10-29T18:46:03.999Z\"},\"fade\":{\"pnl\":-675.8100000000031,\"fills\":25,\"halted\":false,\"at\":\"2026-10-29T18:46:03.999Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-10-29T18:46:03.999Z\"}}",
+  "18:46:04Z STALE position DRS 159 other",
+  "18:46:06Z ORDER others-20261029-DRS pending_new",
+  "19:50:00Z cancel entry orb-20261029-TWLO",
+  "19:55:05Z ORDER orbx-20261029-EGO pending_new",
+  "19:55:31Z could not clear open orders for GKOS",
+  "19:55:31Z ORDER-ERR orbx-20261029-GKOS POST /v2/orders -> 403 insufficient qty available for order (requested: 27, available: 0)",
+  "19:55:42Z could not clear open orders for HII",
+  "19:55:42Z ORDER fadex-20261029-HII pending_new",
+  "19:56:02Z still open after close attempt 1 GKOS",
+  "19:56:02Z ORDER orbx-20261029-GKOS-r2 pending_new",
+  "19:57:23Z books {\"orb\":{\"pnl\":-6727.810210999993,\"fills\":63,\"halted\":true,\"at\":\"2026-10-29T19:57:23.846Z\"},\"fade\":{\"pnl\":-732.5100000000011,\"fills\":26,\"halted\":false,\"at\":\"2026-10-29T19:57:23.846Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-10-29T19:57:23.846Z\"}}"
+ ],
+ "calls": 186,
+ "endedAt": "2026-10-29T19:57:23.846Z"
+}
