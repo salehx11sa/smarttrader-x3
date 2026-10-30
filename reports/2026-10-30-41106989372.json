@@ -1,0 +1,151 @@
+{
+ "version": "x3-1.3",
+ "trading": true,
+ "startedAt": "2026-10-30T18:46:03.829Z",
+ "runId": "41106989372",
+ "phases": {
+  "pairs": {
+   "at": "2026-10-30T19:45:00.317Z",
+   "acts": [
+    {
+     "pair": "AXP/COF",
+     "pa": 317.96,
+     "pb": 203.59,
+     "act": "none",
+     "spread": 0.003958006609531273,
+     "sigma": 0.039841
+    },
+    {
+     "pair": "BAC/JPM",
+     "pa": 49.92,
+     "pb": 335.71,
+     "act": "none",
+     "spread": -0.025113743862336002,
+     "sigma": 0.033676
+    },
+    {
+     "pair": "HD/SYK",
+     "pa": 329.04,
+     "pb": 291.39,
+     "act": "open",
+     "spread": 0.08010698280726813,
+     "shortSym": "HD",
+     "longSym": "SYK",
+     "sigma": 0.03909
+    },
+    {
+     "pair": "COP/XOM",
+     "pa": 153.49,
+     "pb": 186.74,
+     "act": "none",
+     "spread": -0.0014293109456657849,
+     "sigma": 0.04689
+    },
+    {
+     "pair": "KO/PM",
+     "pa": 94.085,
+     "pb": 208.305,
+     "act": "none",
+     "spread": -0.029461180747252236,
+     "sigma": 0.04524
+    },
+    {
+     "pair": "DIS/MA",
+     "pa": 110.85,
+     "pb": 638.38,
+     "act": "none",
+     "spread": -0.03854289634376451,
+     "sigma": 0.050429
+    },
+    {
+     "pair": "GILD/PFE",
+     "pa": 171.59,
+     "pb": 30.425,
+     "act": "none",
+     "spread": 0.08650042173497696,
+     "sigma": 0.047204
+    },
+    {
+     "pair": "AZO/TMUS",
+     "pa": 3158.4,
+     "pb": 156.835,
+     "act": "none",
+     "spread": -0.08348821244281646,
+     "sigma": 0.054945
+    },
+    {
+     "pair": "COST/NEE",
+     "pa": 1015.13,
+     "pb": 83.73,
+     "act": "none",
+     "spread": -0.008082916240614857,
+     "sigma": 0.043856
+    },
+    {
+     "pair": "DE/JNJ",
+     "pa": 673.34,
+     "pb": 273.745,
+     "act": "none",
+     "spread": 0.00442033306636791,
+     "sigma": 0.055851
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -388.4802109999946,
+   "fills": 64,
+   "halted": false,
+   "at": "2026-10-30T19:56:22.678Z"
+  },
+  "fade": {
+   "pnl": -1075.8800000000037,
+   "fills": 32,
+   "halted": false,
+   "at": "2026-10-30T19:56:22.679Z"
+  },
+  "pair": {
+   "pnl": 0,
+   "fills": 0,
+   "halted": false,
+   "at": "2026-10-30T19:56:22.679Z"
+  }
+ },
+ "date": "2026-10-30",
+ "open": "2026-10-30T13:30:00.000Z",
+ "close": "2026-10-30T20:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-10-30T19:45:00.279Z",
+   "symbol": "HD",
+   "qty": "5",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "pair-20261030-o-HD",
+   "sent": true,
+   "result": "rejected:asset \"HD\" cannot be sold short"
+  },
+  {
+   "at": "2026-10-30T19:55:02.450Z",
+   "symbol": "CVCO",
+   "qty": "9",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261030-CVCO",
+   "sent": true,
+   "result": "pending_new",
+   "id": "d8ca0878-ff89-40e9-985a-fe92f193d267"
+  }
+ ],
+ "log": [
+  "18:46:04Z books {\"orb\":{\"pnl\":-388.4802109999946,\"fills\":64,\"halted\":false,\"at\":\"2026-10-30T18:46:04.070Z\"},\"fade\":{\"pnl\":-940.3400000000038,\"fills\":31,\"halted\":false,\"at\":\"2026-10-30T18:46:04.071Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-10-30T18:46:04.071Z\"}}",
+  "19:45:00Z ORDER pair-20261030-o-HD rejected:asset \"HD\" cannot be sold short",
+  "19:55:02Z ORDER fadex-20261030-CVCO pending_new",
+  "19:56:22Z books {\"orb\":{\"pnl\":-388.4802109999946,\"fills\":64,\"halted\":false,\"at\":\"2026-10-30T19:56:22.678Z\"},\"fade\":{\"pnl\":-1075.8800000000037,\"fills\":32,\"halted\":false,\"at\":\"2026-10-30T19:56:22.679Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-10-30T19:56:22.679Z\"}}"
+ ],
+ "calls": 139,
+ "endedAt": "2026-10-30T19:56:22.679Z"
+}
