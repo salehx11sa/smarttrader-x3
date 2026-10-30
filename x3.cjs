@@ -7,7 +7,7 @@
    Usage: node x3.cjs            (env: APCA_KEY, APCA_SEC, TRADING_ENABLED, X3_MAX_MIN optional)                        */
 'use strict';
 const fs = require('fs'), path = require('path');
-const VERSION = 'x3-1.2';
+const VERSION = 'x3-1.3';
 const PAPER = 'https://paper-api.alpaca.markets';
 const DATA = 'https://data.alpaca.markets';
 const PAIRS = JSON.parse(fs.readFileSync(path.join(__dirname, 'pairs.json'), 'utf8'));
@@ -159,7 +159,7 @@ async function main() {
     await sleepUntil(openMs + 30000);
     await closeStale(await todays(), await positions(), pairSyms, D);
     await sleepUntil(openMs + 5 * 60000 + 15000);
-    const already = (await todays()).filter(o => o.client_order_id.startsWith(`orb-${D}`) || o.client_order_id.startsWith(`fade-${D}`));
+    const already = (await todays()).filter(o => o.client_order_id.startsWith(`orb-${D}`) || o.client_order_id.startsWith(`orbm-${D}`) || o.client_order_id.startsWith(`fade-${D}`));
     if (already.length) say('decisions already made today by another run:', already.length);
     else if (clock.now() > openMs + R.orb.lastEntryMinAfterOpen * 60000) { say('too late for ORB/FADE today'); rep.phases.missed = true; }
     else {
@@ -231,8 +231,8 @@ async function buildUniverse(today, openMs, pairSyms) {
   return { rows };
 }
 async function bookOf(sym) { /* book of the latest orb/fade entry on this symbol */
-  const o = (await api(PAPER, 'GET', `/v2/orders?status=all&symbols=${sym}&limit=100&direction=desc&after=${R.start}T00:00:00Z`)).j.find(x => /^(orb|fade)-\d{8}-/.test(x.client_order_id));
-  return o ? o.client_order_id.split('-')[0] : 'other';
+  const o = (await api(PAPER, 'GET', `/v2/orders?status=all&symbols=${sym}&limit=100&direction=desc&after=${R.start}T00:00:00Z`)).j.find(x => /^(orb|orbm|fade)-\d{8}-/.test(x.client_order_id));
+  return o ? o.client_order_id.split('-')[0].replace('orbm', 'orb') : 'other';
 }
 async function protectPositions(D, pairSyms) { /* x3-1.1: every open ORB/FADE position must have a broker stop; if the price is already beyond the planned stop, close */
   try {
@@ -255,7 +255,7 @@ async function protectPositions(D, pairSyms) { /* x3-1.1: every open ORB/FADE po
   } catch (err) { say('PROTECT error', err.message); }
 }
 async function closeStale(tod, pos, pairSyms, D) {
-  const mine = new Set(tod.filter(o => o.client_order_id.startsWith(`orb-${D}`) || o.client_order_id.startsWith(`fade-${D}`)).map(o => o.symbol));
+  const mine = new Set(tod.filter(o => o.client_order_id.startsWith(`orb-${D}`) || o.client_order_id.startsWith(`orbm-${D}`) || o.client_order_id.startsWith(`fade-${D}`)).map(o => o.symbol)); /* x3-1.3: orbm entries are today's too */
   const list = []; for (const p of pos) if (!pairSyms.has(p.symbol) && !mine.has(p.symbol)) { const b = await bookOf(p.symbol); say('STALE position', p.symbol, p.qty, b); list.push({ p, cid: `${b}s-${D}-${p.symbol}` }); }
   await closeMany(list);
 }
@@ -282,7 +282,7 @@ async function closeMany(list) { /* cancel protective orders, close at market, v
   }
 }
 async function flattenIntraday(tod, pos, pairSyms, D) {
-  const list = []; for (const p of pos) if (!pairSyms.has(p.symbol)) { const t = tod.find(o => o.symbol === p.symbol && /^(orb|fade)-/.test(o.client_order_id)); const b = t ? t.client_order_id.split('-')[0] : await bookOf(p.symbol); list.push({ p, cid: `${b}x-${D}-${p.symbol}` }); }
+  const list = []; for (const p of pos) if (!pairSyms.has(p.symbol)) { const t = tod.find(o => o.symbol === p.symbol && /^(orb|orbm|fade)-/.test(o.client_order_id)); const b = t ? t.client_order_id.split('-')[0].replace('orbm', 'orb') : await bookOf(p.symbol); list.push({ p, cid: `${b}x-${D}-${p.symbol}` }); }
   await closeMany(list);
 }
 async function doPairs(rep, D, closeAll, pos, halted) {
@@ -309,6 +309,7 @@ async function bookStatus(rep, today) {
   const pos = (await api(PAPER, 'GET', '/v2/positions')).j; const PB = Object.fromEntries(pos.map(p => [p.symbol, p]));
   const pairSyms = new Set(PAIRS.pairs.flatMap(p => [p.a, p.b])); const halted = {};
   const owner = {}; for (const o of [...flat].sort((x, y) => (x.filled_at || '') < (y.filled_at || '') ? -1 : 1)) if (+o.filled_qty && /^(orb|fade)$/.test(o.book)) owner[o.symbol] = o.book;
+  for (const o of flat) if (o.book === 'other' && owner[o.symbol]) o.book = owner[o.symbol]; /* x3-1.3: closes recorded under 'other' (e.g. others-20261029-DRS) belong to the symbol's book */
   for (const b of ['orb', 'fade', 'pair']) { const os = flat.filter(o => o.book === b); const syms = b === 'pair' ? [...pairSyms] : Object.keys(owner).filter(s => owner[s] === b && !pairSyms.has(s));
     const r = cashflowPnl(os, PB, syms); halted[b] = r.pnl <= -R.killLossUsd; rep.books[b] = { ...r, halted: halted[b], at: new Date().toISOString() }; }
   say('books', JSON.stringify(rep.books)); return halted;
