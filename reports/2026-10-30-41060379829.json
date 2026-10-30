@@ -1,0 +1,195 @@
+{
+ "version": "x3-1.2",
+ "trading": true,
+ "startedAt": "2026-10-30T13:05:50.438Z",
+ "runId": "41060379829",
+ "phases": {
+  "universe": {
+   "n": 2038,
+   "at": "2026-10-30T13:10:50.822Z"
+  },
+  "decisions": {
+   "at": "2026-10-30T13:36:43.749Z",
+   "withBar": 1687,
+   "orb": [],
+   "fade": [
+    {
+     "sym": "FDXF",
+     "gap": 0.12735892059440235,
+     "z": 7.146436974631726,
+     "atr": 4.199107142857139,
+     "ref": 122.76,
+     "stop": 124.86,
+     "qty": 48
+    },
+    {
+     "sym": "CDNA",
+     "gap": 0.19756711409395988,
+     "z": 5.584748146276854,
+     "atr": 4.173064285714287,
+     "ref": 87.37,
+     "stop": 89.46,
+     "qty": 68
+    },
+    {
+     "sym": "VLTO",
+     "gap": 0.06102248702671531,
+     "z": 5.495943090707575,
+     "atr": 1.8756071428571428,
+     "ref": 113,
+     "stop": 113.94,
+     "qty": 53
+    },
+    {
+     "sym": "CVCO",
+     "gap": 0.14351758793969838,
+     "z": 4.537109027197521,
+     "atr": 20.45214285714284,
+     "ref": 625.79,
+     "stop": 636.02,
+     "qty": 9
+    },
+    {
+     "sym": "BTSG",
+     "gap": 0.08618399202922622,
+     "z": 4.208405389282369,
+     "atr": 1.7820428571428562,
+     "ref": 68.48,
+     "stop": 69.38,
+     "qty": 87
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -6727.810210999993,
+   "fills": 63,
+   "halted": true,
+   "at": "2026-10-30T13:05:51.288Z"
+  },
+  "fade": {
+   "pnl": -732.5100000000011,
+   "fills": 26,
+   "halted": false,
+   "at": "2026-10-30T13:05:51.288Z"
+  },
+  "pair": {
+   "pnl": 0,
+   "fills": 0,
+   "halted": false,
+   "at": "2026-10-30T13:05:51.288Z"
+  }
+ },
+ "date": "2026-10-30",
+ "open": "2026-10-30T13:30:00.000Z",
+ "close": "2026-10-30T20:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-10-30T13:36:43.749Z",
+   "symbol": "FDXF",
+   "qty": "48",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "124.86"
+   },
+   "client_order_id": "fade-20261030-FDXF",
+   "sent": true,
+   "result": "pending_new",
+   "id": "12bf8c00-f574-4097-85c5-88c5f998e227"
+  },
+  {
+   "at": "2026-10-30T13:36:43.962Z",
+   "symbol": "CDNA",
+   "qty": "68",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "89.46"
+   },
+   "client_order_id": "fade-20261030-CDNA",
+   "sent": true,
+   "result": "rejected:stop_loss.stop_price must be >= base_price + 0.01"
+  },
+  {
+   "at": "2026-10-30T13:36:44.038Z",
+   "symbol": "VLTO",
+   "qty": "53",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "113.94"
+   },
+   "client_order_id": "fade-20261030-VLTO",
+   "sent": true,
+   "result": "pending_new",
+   "id": "5b1fc9bf-c8ef-434d-862f-0a15d3239538"
+  },
+  {
+   "at": "2026-10-30T13:36:44.109Z",
+   "symbol": "CVCO",
+   "qty": "9",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "636.02"
+   },
+   "client_order_id": "fade-20261030-CVCO",
+   "sent": true,
+   "result": "pending_new",
+   "id": "52422c63-fbf9-4565-af05-89cc1b341d17"
+  },
+  {
+   "at": "2026-10-30T13:36:44.179Z",
+   "symbol": "BTSG",
+   "qty": "87",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "69.38"
+   },
+   "client_order_id": "fade-20261030-BTSG",
+   "sent": true,
+   "result": "rejected:stop_loss.stop_price must be >= base_price + 0.01"
+  },
+  {
+   "at": "2026-10-30T13:37:45.142Z",
+   "symbol": "VLTO",
+   "qty": "53",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "113.94",
+   "time_in_force": "day",
+   "client_order_id": "fadep-20261030-VLTO-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "c87d7832-3ec6-4c35-9567-d25f4f3197d3"
+  }
+ ],
+ "log": [
+  "13:05:51Z books {\"orb\":{\"pnl\":-6727.810210999993,\"fills\":63,\"halted\":true,\"at\":\"2026-10-30T13:05:51.288Z\"},\"fade\":{\"pnl\":-732.5100000000011,\"fills\":26,\"halted\":false,\"at\":\"2026-10-30T13:05:51.288Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-10-30T13:05:51.288Z\"}}",
+  "13:05:51Z assets 5694",
+  "13:08:12Z liquid universe 2038",
+  "13:36:43Z ORDER fade-20261030-FDXF pending_new",
+  "13:36:44Z ORDER fade-20261030-CDNA rejected:stop_loss.stop_price must be >= base_price + 0.01",
+  "13:36:44Z ORDER fade-20261030-VLTO pending_new",
+  "13:36:44Z ORDER fade-20261030-CVCO pending_new",
+  "13:36:44Z ORDER fade-20261030-BTSG rejected:stop_loss.stop_price must be >= base_price + 0.01",
+  "13:37:45Z PROTECT VLTO -53 px 113.715 stop 113.94 stop",
+  "13:37:45Z ORDER fadep-20261030-VLTO-1 pending_new",
+  "18:45:50Z deadline before pairs time; next run continues"
+ ],
+ "calls": 826,
+ "endedAt": "2026-10-30T18:45:50.444Z"
+}
