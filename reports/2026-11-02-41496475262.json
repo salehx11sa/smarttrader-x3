@@ -1,0 +1,230 @@
+{
+ "version": "x3-1.3",
+ "trading": true,
+ "startedAt": "2026-11-02T18:46:10.541Z",
+ "runId": "41496475262",
+ "phases": {
+  "pairs": {
+   "at": "2026-11-02T20:45:00.114Z",
+   "acts": [
+    {
+     "pair": "AXP/COF",
+     "pa": 328.94,
+     "pb": 211.065,
+     "act": "none",
+     "spread": 0.0018869852557432676,
+     "sigma": 0.039841
+    },
+    {
+     "pair": "BAC/JPM",
+     "pa": 49.67,
+     "pb": 341.27,
+     "act": "none",
+     "spread": -0.046826564851371266,
+     "sigma": 0.033676
+    },
+    {
+     "pair": "HD/SYK",
+     "pa": 340.575,
+     "pb": 307.18,
+     "act": "none",
+     "spread": 0.06476491110019067,
+     "sigma": 0.03909
+    },
+    {
+     "pair": "COP/XOM",
+     "pa": 147.5,
+     "pb": 180.93,
+     "act": "none",
+     "spread": -0.009438553575298991,
+     "sigma": 0.04689
+    },
+    {
+     "pair": "KO/PM",
+     "pa": 96.045,
+     "pb": 208.16,
+     "act": "none",
+     "spread": -0.007593061425094305,
+     "sigma": 0.04524
+    },
+    {
+     "pair": "DIS/MA",
+     "pa": 113.08,
+     "pb": 657.725,
+     "act": "none",
+     "spread": -0.04974568557920955,
+     "sigma": 0.050429
+    },
+    {
+     "pair": "GILD/PFE",
+     "pa": 170.68,
+     "pb": 30.945,
+     "act": "none",
+     "spread": 0.06335256642870091,
+     "sigma": 0.047204
+    },
+    {
+     "pair": "AZO/TMUS",
+     "pa": 3249.65,
+     "pb": 159.72,
+     "act": "none",
+     "spread": -0.07466681564520528,
+     "sigma": 0.054945
+    },
+    {
+     "pair": "COST/NEE",
+     "pa": 1040.95,
+     "pb": 85.485,
+     "act": "none",
+     "spread": -0.003724725264132811,
+     "sigma": 0.043856
+    },
+    {
+     "pair": "DE/JNJ",
+     "pa": 665.11,
+     "pb": 271.43,
+     "act": "none",
+     "spread": 0.0004586074074148794,
+     "sigma": 0.055851
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -337.25012199999765,
+   "fills": 104,
+   "halted": false,
+   "at": "2026-11-02T20:57:32.869Z"
+  },
+  "fade": {
+   "pnl": -1263.1099780000031,
+   "fills": 38,
+   "halted": false,
+   "at": "2026-11-02T20:57:32.869Z"
+  },
+  "pair": {
+   "pnl": 0,
+   "fills": 0,
+   "halted": false,
+   "at": "2026-11-02T20:57:32.869Z"
+  }
+ },
+ "date": "2026-11-02",
+ "open": "2026-11-02T14:30:00.000Z",
+ "close": "2026-11-02T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-02T20:55:02.365Z",
+   "symbol": "CBRE",
+   "qty": "45",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261102-CBRE",
+   "sent": true,
+   "result": "pending_new",
+   "id": "21b919aa-5727-4050-a1d6-3870b22af197"
+  },
+  {
+   "at": "2026-11-02T20:55:11.027Z",
+   "symbol": "FOXA",
+   "qty": "93",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261102-FOXA",
+   "sent": true,
+   "result": "pending_new",
+   "id": "207afcd1-3ea3-491f-b10c-c4f82e218348"
+  },
+  {
+   "at": "2026-11-02T20:55:21.170Z",
+   "symbol": "MAR",
+   "qty": "14",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261102-MAR",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 14, available: 0)"
+  },
+  {
+   "at": "2026-11-02T20:55:46.408Z",
+   "symbol": "PCVX",
+   "qty": "96",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261102-PCVX",
+   "sent": true,
+   "result": "pending_new",
+   "id": "4e376642-0b4e-4037-a79e-0f49af68e9dc"
+  },
+  {
+   "at": "2026-11-02T20:55:48.457Z",
+   "symbol": "QURE",
+   "qty": "243",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261102-QURE",
+   "sent": true,
+   "result": "pending_new",
+   "id": "604ad256-bc73-4eb7-a4fd-1d358a4efc18"
+  },
+  {
+   "at": "2026-11-02T20:55:50.530Z",
+   "symbol": "STNG",
+   "qty": "65",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261102-STNG",
+   "sent": true,
+   "result": "pending_new",
+   "id": "bc465eed-7d52-4988-aa78-ae336a5f53e2"
+  },
+  {
+   "at": "2026-11-02T20:55:52.590Z",
+   "symbol": "WRBY",
+   "qty": "247",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261102-WRBY",
+   "sent": true,
+   "result": "pending_new",
+   "id": "4c5d6020-31dc-45df-84cd-c94c4dc831b9"
+  },
+  {
+   "at": "2026-11-02T20:56:12.684Z",
+   "symbol": "MAR",
+   "qty": "14",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261102-MAR-r2",
+   "sent": true,
+   "result": "pending_new",
+   "id": "9ca8853d-cd04-4139-84f9-2b268a3101fd"
+  }
+ ],
+ "log": [
+  "18:46:10Z books {\"orb\":{\"pnl\":-255.2905159999973,\"fills\":96,\"halted\":false,\"at\":\"2026-11-02T18:46:10.825Z\"},\"fade\":{\"pnl\":-1255.1699760000029,\"fills\":37,\"halted\":false,\"at\":\"2026-11-02T18:46:10.825Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-11-02T18:46:10.825Z\"}}",
+  "20:55:02Z ORDER orbx-20261102-CBRE pending_new",
+  "20:55:11Z ORDER orbx-20261102-FOXA pending_new",
+  "20:55:21Z could not clear open orders for MAR",
+  "20:55:21Z ORDER-ERR fadex-20261102-MAR POST /v2/orders -> 403 insufficient qty available for order (requested: 14, available: 0)",
+  "20:55:46Z could not clear open orders for PCVX",
+  "20:55:46Z ORDER orbx-20261102-PCVX pending_new",
+  "20:55:48Z ORDER orbx-20261102-QURE pending_new",
+  "20:55:50Z ORDER orbx-20261102-STNG pending_new",
+  "20:55:52Z ORDER orbx-20261102-WRBY pending_new",
+  "20:56:12Z still open after close attempt 1 MAR",
+  "20:56:12Z ORDER fadex-20261102-MAR-r2 pending_new",
+  "20:57:32Z books {\"orb\":{\"pnl\":-337.25012199999765,\"fills\":104,\"halted\":false,\"at\":\"2026-11-02T20:57:32.869Z\"},\"fade\":{\"pnl\":-1263.1099780000031,\"fills\":38,\"halted\":false,\"at\":\"2026-11-02T20:57:32.869Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-11-02T20:57:32.869Z\"}}"
+ ],
+ "calls": 327,
+ "endedAt": "2026-11-02T20:57:32.869Z"
+}
