@@ -1,0 +1,1247 @@
+{
+ "version": "x3-1.3",
+ "trading": true,
+ "startedAt": "2026-11-02T13:05:49.418Z",
+ "runId": "41449998780",
+ "phases": {
+  "universe": {
+   "n": 2035,
+   "at": "2026-11-02T13:07:04.639Z"
+  },
+  "decisions": {
+   "at": "2026-11-02T14:35:42.750Z",
+   "withBar": 1666,
+   "orb": [
+    {
+     "sym": "FLYW",
+     "rvol": 33.55977152182783,
+     "dir": "long",
+     "atr": 0.659342857142857,
+     "h": 20.03,
+     "l": 19.795,
+     "c": 19.97,
+     "entry": 20.03,
+     "stop": 19.96,
+     "qty": 299
+    },
+    {
+     "sym": "QURE",
+     "rvol": 20.86300745020526,
+     "dir": "short",
+     "atr": 1.3554071428571428,
+     "h": 26.55,
+     "l": 24.68,
+     "c": 24.81,
+     "entry": 24.68,
+     "stop": 24.82,
+     "qty": 243
+    },
+    {
+     "sym": "BXP",
+     "rvol": 20.696531791907514,
+     "dir": "long",
+     "atr": 1.6939285714285717,
+     "h": 63.32,
+     "l": 63.115,
+     "c": 63.32,
+     "entry": 63.32,
+     "stop": 63.15,
+     "qty": 94
+    },
+    {
+     "sym": "FTV",
+     "rvol": 17.451495258935083,
+     "dir": "long",
+     "atr": 1.6789285714285727,
+     "h": 66.675,
+     "l": 65.97,
+     "c": 66.62,
+     "entry": 66.68,
+     "stop": 66.51,
+     "qty": 89
+    },
+    {
+     "sym": "PWP",
+     "rvol": 16.652866814450903,
+     "dir": "long",
+     "atr": 1.037642857142857,
+     "h": 14.85,
+     "l": 14.41,
+     "c": 14.84,
+     "entry": 14.85,
+     "stop": 14.74,
+     "qty": 404
+    },
+    {
+     "sym": "ECHO",
+     "rvol": 16.208537880745272,
+     "dir": "short",
+     "atr": 4.606728571428571,
+     "h": 100.575,
+     "l": 98.815,
+     "c": 99.385,
+     "entry": 98.81,
+     "stop": 99.28,
+     "qty": 60
+    },
+    {
+     "sym": "FWONK",
+     "rvol": 15.729485246607796,
+     "dir": "short",
+     "atr": 2.2530357142857134,
+     "h": 93.33,
+     "l": 92.03,
+     "c": 92.14,
+     "entry": 92.03,
+     "stop": 92.26,
+     "qty": 65
+    },
+    {
+     "sym": "JEF",
+     "rvol": 15.339077983627746,
+     "dir": "long",
+     "atr": 1.7014285714285715,
+     "h": 47.93,
+     "l": 46.16,
+     "c": 47.84,
+     "entry": 47.93,
+     "stop": 47.75,
+     "qty": 125
+    },
+    {
+     "sym": "WRBY",
+     "rvol": 14.627108485315523,
+     "dir": "short",
+     "atr": 1.3357142857142856,
+     "h": 24.97,
+     "l": 24.25,
+     "c": 24.71,
+     "entry": 24.25,
+     "stop": 24.39,
+     "qty": 247
+    },
+    {
+     "sym": "STNG",
+     "rvol": 13.217802676626206,
+     "dir": "short",
+     "atr": 3.7796428571428575,
+     "h": 92.73,
+     "l": 91.3,
+     "c": 91.325,
+     "entry": 91.3,
+     "stop": 91.68,
+     "qty": 65
+    },
+    {
+     "sym": "CHKP",
+     "rvol": 12.641370047011417,
+     "dir": "short",
+     "atr": 5.472178571428572,
+     "h": 148.585,
+     "l": 145.855,
+     "c": 146.23,
+     "entry": 145.85,
+     "stop": 146.4,
+     "qty": 41
+    },
+    {
+     "sym": "EL",
+     "rvol": 11.120179437088488,
+     "dir": "short",
+     "atr": 3.5882071428571414,
+     "h": 112.49,
+     "l": 107.86,
+     "c": 108.42,
+     "entry": 107.86,
+     "stop": 108.22,
+     "qty": 55
+    },
+    {
+     "sym": "CBRE",
+     "rvol": 10.845368344274252,
+     "dir": "long",
+     "atr": 4.639021428571426,
+     "h": 130.48,
+     "l": 129.92,
+     "c": 130.185,
+     "entry": 130.48,
+     "stop": 130.01,
+     "qty": 45
+    },
+    {
+     "sym": "BFLY",
+     "rvol": 10.347250818510142,
+     "dir": "short",
+     "atr": 0.5796071428571429,
+     "h": 6.36,
+     "l": 6.22,
+     "c": 6.3,
+     "entry": 6.22,
+     "stop": 6.28,
+     "qty": 964
+    },
+    {
+     "sym": "ROKU",
+     "rvol": 8.909885172241637,
+     "dir": "short",
+     "atr": 2.0455357142857116,
+     "h": 158.33,
+     "l": 156.85,
+     "c": 156.85,
+     "entry": 156.85,
+     "stop": 157.06,
+     "qty": 38
+    },
+    {
+     "sym": "SYF",
+     "rvol": 8.427921807846943,
+     "dir": "long",
+     "atr": 2.0505500000000003,
+     "h": 76.82,
+     "l": 76,
+     "c": 76.65,
+     "entry": 76.82,
+     "stop": 76.61,
+     "qty": 78
+    },
+    {
+     "sym": "FOXA",
+     "rvol": 8.368610793832097,
+     "dir": "short",
+     "atr": 1.8992857142857151,
+     "h": 66.345,
+     "l": 64.01,
+     "c": 64.555,
+     "entry": 64.01,
+     "stop": 64.2,
+     "qty": 93
+    },
+    {
+     "sym": "PCVX",
+     "rvol": 8.293989335918566,
+     "dir": "short",
+     "atr": 3.0156,
+     "h": 62.465,
+     "l": 62.03,
+     "c": 62.18,
+     "entry": 62.03,
+     "stop": 62.34,
+     "qty": 96
+    },
+    {
+     "sym": "APD",
+     "rvol": 8.039393939393939,
+     "dir": "long",
+     "atr": 4.859535714285719,
+     "h": 317.28,
+     "l": 315.95,
+     "c": 317.28,
+     "entry": 317.28,
+     "stop": 316.79,
+     "qty": 18
+    },
+    {
+     "sym": "AXSM",
+     "rvol": 7.4645205953617175,
+     "dir": "long",
+     "atr": 7.302685714285714,
+     "h": 130.64,
+     "l": 125.655,
+     "c": 130.64,
+     "entry": 130.64,
+     "stop": 129.9,
+     "qty": 45
+    }
+   ],
+   "fade": [
+    {
+     "sym": "IDXX",
+     "gap": 0.12951506685292347,
+     "z": 6.279296423931393,
+     "atr": 15.573307142857143,
+     "ref": 644.72,
+     "stop": 652.51,
+     "qty": 9
+    },
+    {
+     "sym": "MAR",
+     "gap": 0.06468820435762579,
+     "z": 4.653110281569033,
+     "atr": 8.574285714285717,
+     "ref": 420.83,
+     "stop": 425.12,
+     "qty": 14
+    },
+    {
+     "sym": "BILI",
+     "gap": 0.05757097791798116,
+     "z": 2.9583219420379003,
+     "atr": 0.38237142857142875,
+     "ref": 13.445,
+     "stop": 13.64,
+     "qty": 446
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -388.4802109999946,
+   "fills": 64,
+   "halted": false,
+   "at": "2026-11-02T13:05:49.815Z"
+  },
+  "fade": {
+   "pnl": -1075.8800000000037,
+   "fills": 32,
+   "halted": false,
+   "at": "2026-11-02T13:05:49.815Z"
+  },
+  "pair": {
+   "pnl": 0,
+   "fills": 0,
+   "halted": false,
+   "at": "2026-11-02T13:05:49.815Z"
+  }
+ },
+ "date": "2026-11-02",
+ "open": "2026-11-02T14:30:00.000Z",
+ "close": "2026-11-02T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-02T14:35:42.750Z",
+   "symbol": "FLYW",
+   "qty": "299",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "20.03",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "19.96"
+   },
+   "client_order_id": "orb-20261102-FLYW",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-11-02T14:35:42.852Z",
+   "symbol": "FLYW",
+   "qty": "299",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "19.89"
+   },
+   "client_order_id": "orbm-20261102-FLYW",
+   "sent": true,
+   "result": "pending_new",
+   "id": "db873dd1-f38a-4ded-81c0-8d84421939e7"
+  },
+  {
+   "at": "2026-11-02T14:35:42.882Z",
+   "symbol": "QURE",
+   "qty": "243",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "24.68",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "24.82"
+   },
+   "client_order_id": "orb-20261102-QURE",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-02T14:35:42.949Z",
+   "symbol": "QURE",
+   "qty": "243",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "24.68"
+   },
+   "client_order_id": "orbm-20261102-QURE",
+   "sent": true,
+   "result": "pending_new",
+   "id": "55f7a51c-50c7-4ac7-a912-d45f007d4e51"
+  },
+  {
+   "at": "2026-11-02T14:35:42.977Z",
+   "symbol": "BXP",
+   "qty": "94",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "63.32",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "63.15"
+   },
+   "client_order_id": "orb-20261102-BXP",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-11-02T14:35:43.021Z",
+   "symbol": "BXP",
+   "qty": "94",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "63.25"
+   },
+   "client_order_id": "orbm-20261102-BXP",
+   "sent": true,
+   "result": "pending_new",
+   "id": "751fae5d-424a-4d56-b0ea-7d1efaef9c70"
+  },
+  {
+   "at": "2026-11-02T14:35:43.099Z",
+   "symbol": "FTV",
+   "qty": "89",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "66.68",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "66.51"
+   },
+   "client_order_id": "orb-20261102-FTV",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-11-02T14:35:43.142Z",
+   "symbol": "FTV",
+   "qty": "89",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "66.50"
+   },
+   "client_order_id": "orbm-20261102-FTV",
+   "sent": true,
+   "result": "pending_new",
+   "id": "89779305-887e-4076-85cf-9c60c0bbae41"
+  },
+  {
+   "at": "2026-11-02T14:35:43.170Z",
+   "symbol": "PWP",
+   "qty": "404",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "14.85",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "14.74"
+   },
+   "client_order_id": "orb-20261102-PWP",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-11-02T14:35:43.218Z",
+   "symbol": "PWP",
+   "qty": "404",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "14.73"
+   },
+   "client_order_id": "orbm-20261102-PWP",
+   "sent": true,
+   "result": "pending_new",
+   "id": "4f949563-e6ee-4773-8aa3-e6930f88bc54"
+  },
+  {
+   "at": "2026-11-02T14:35:43.245Z",
+   "symbol": "ECHO",
+   "qty": "60",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "98.81",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "99.28"
+   },
+   "client_order_id": "orb-20261102-ECHO",
+   "sent": true,
+   "result": "pending_new",
+   "id": "aa198ef8-ec8c-4589-9777-8fd4910e239f"
+  },
+  {
+   "at": "2026-11-02T14:35:43.268Z",
+   "symbol": "FWONK",
+   "qty": "65",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "92.03",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "92.26"
+   },
+   "client_order_id": "orb-20261102-FWONK",
+   "sent": true,
+   "result": "pending_new",
+   "id": "11ea7a3a-5a75-4d82-a3ed-65d933181aa9"
+  },
+  {
+   "at": "2026-11-02T14:35:43.296Z",
+   "symbol": "JEF",
+   "qty": "125",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "47.93",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "47.75"
+   },
+   "client_order_id": "orb-20261102-JEF",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-11-02T14:35:43.353Z",
+   "symbol": "JEF",
+   "qty": "125",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "47.79"
+   },
+   "client_order_id": "orbm-20261102-JEF",
+   "sent": true,
+   "result": "pending_new",
+   "id": "b93a68b4-1708-448f-904c-9c097e9c7ec8"
+  },
+  {
+   "at": "2026-11-02T14:35:43.383Z",
+   "symbol": "WRBY",
+   "qty": "247",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "24.25",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "24.39"
+   },
+   "client_order_id": "orb-20261102-WRBY",
+   "sent": true,
+   "result": "pending_new",
+   "id": "5dc5c556-abbf-41d3-b7eb-849192a4d47a"
+  },
+  {
+   "at": "2026-11-02T14:35:43.413Z",
+   "symbol": "STNG",
+   "qty": "65",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "91.30",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "91.68"
+   },
+   "client_order_id": "orb-20261102-STNG",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-02T14:35:43.490Z",
+   "symbol": "STNG",
+   "qty": "65",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "91.71"
+   },
+   "client_order_id": "orbm-20261102-STNG",
+   "sent": true,
+   "result": "pending_new",
+   "id": "f74ed45e-473c-42ef-9fc3-bf982ed6b6f6"
+  },
+  {
+   "at": "2026-11-02T14:35:43.518Z",
+   "symbol": "CHKP",
+   "qty": "41",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "145.85",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "146.40"
+   },
+   "client_order_id": "orb-20261102-CHKP",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-02T14:35:43.562Z",
+   "symbol": "CHKP",
+   "qty": "41",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "146.24"
+   },
+   "client_order_id": "orbm-20261102-CHKP",
+   "sent": true,
+   "result": "pending_new",
+   "id": "bd721c57-9161-4e2a-9ec6-8b8bab215a28"
+  },
+  {
+   "at": "2026-11-02T14:35:43.602Z",
+   "symbol": "EL",
+   "qty": "55",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "107.86",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "108.22"
+   },
+   "client_order_id": "orb-20261102-EL",
+   "sent": true,
+   "result": "pending_new",
+   "id": "7fc095be-def8-43a9-89a9-c6d3f3cde850"
+  },
+  {
+   "at": "2026-11-02T14:35:43.632Z",
+   "symbol": "CBRE",
+   "qty": "45",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "130.48",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "130.01"
+   },
+   "client_order_id": "orb-20261102-CBRE",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-11-02T14:35:43.673Z",
+   "symbol": "CBRE",
+   "qty": "45",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "129.72"
+   },
+   "client_order_id": "orbm-20261102-CBRE",
+   "sent": true,
+   "result": "pending_new",
+   "id": "e0a8a862-73c4-4985-ac6d-d43c89176705"
+  },
+  {
+   "at": "2026-11-02T14:35:43.702Z",
+   "symbol": "BFLY",
+   "qty": "964",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "6.22",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "6.28"
+   },
+   "client_order_id": "orb-20261102-BFLY",
+   "sent": true,
+   "result": "pending_new",
+   "id": "266cea09-2bc4-40af-9358-3407f72f6a9d"
+  },
+  {
+   "at": "2026-11-02T14:35:43.732Z",
+   "symbol": "ROKU",
+   "qty": "38",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "156.85",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "157.06"
+   },
+   "client_order_id": "orb-20261102-ROKU",
+   "sent": true,
+   "result": "pending_new",
+   "id": "24d8d68a-7591-43be-9ae5-ffb8ef31cec1"
+  },
+  {
+   "at": "2026-11-02T14:35:43.762Z",
+   "symbol": "SYF",
+   "qty": "78",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "76.82",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "76.61"
+   },
+   "client_order_id": "orb-20261102-SYF",
+   "sent": true,
+   "result": "pending_new",
+   "id": "2e29f5b6-912d-42e0-b8d5-311fc1dbb157"
+  },
+  {
+   "at": "2026-11-02T14:35:43.787Z",
+   "symbol": "FOXA",
+   "qty": "93",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "64.01",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "64.20"
+   },
+   "client_order_id": "orb-20261102-FOXA",
+   "sent": true,
+   "result": "pending_new",
+   "id": "7b69c102-0c9b-40b9-a0e6-1c965014fb5b"
+  },
+  {
+   "at": "2026-11-02T14:35:43.813Z",
+   "symbol": "PCVX",
+   "qty": "96",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "62.03",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "62.34"
+   },
+   "client_order_id": "orb-20261102-PCVX",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-02T14:35:43.865Z",
+   "symbol": "PCVX",
+   "qty": "96",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "62.49"
+   },
+   "client_order_id": "orbm-20261102-PCVX",
+   "sent": true,
+   "result": "pending_new",
+   "id": "616c838a-9be0-4b3c-9a91-ba9c1c55e90d"
+  },
+  {
+   "at": "2026-11-02T14:35:43.902Z",
+   "symbol": "APD",
+   "qty": "18",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "317.28",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "316.79"
+   },
+   "client_order_id": "orb-20261102-APD",
+   "sent": true,
+   "result": "pending_new",
+   "id": "87edfc4b-8057-4f7d-8119-87df420717f2"
+  },
+  {
+   "at": "2026-11-02T14:35:43.927Z",
+   "symbol": "AXSM",
+   "qty": "45",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "130.64",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "129.90"
+   },
+   "client_order_id": "orb-20261102-AXSM",
+   "sent": true,
+   "result": "pending_new",
+   "id": "59adbada-e81b-456d-b066-364878330fd3"
+  },
+  {
+   "at": "2026-11-02T14:35:43.950Z",
+   "symbol": "IDXX",
+   "qty": "9",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "652.51"
+   },
+   "client_order_id": "fade-20261102-IDXX",
+   "sent": true,
+   "result": "pending_new",
+   "id": "d703b57d-3553-4503-b8db-75949f6b9f13"
+  },
+  {
+   "at": "2026-11-02T14:35:43.983Z",
+   "symbol": "MAR",
+   "qty": "14",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "425.12"
+   },
+   "client_order_id": "fade-20261102-MAR",
+   "sent": true,
+   "result": "pending_new",
+   "id": "67441ea6-f33e-443b-9efe-752e647a7fa7"
+  },
+  {
+   "at": "2026-11-02T14:35:44.015Z",
+   "symbol": "BILI",
+   "qty": "446",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "13.64"
+   },
+   "client_order_id": "fade-20261102-BILI",
+   "sent": true,
+   "result": "pending_new",
+   "id": "6749ba22-56e5-403b-ae4c-3a40a1d679b6"
+  },
+  {
+   "at": "2026-11-02T14:36:44.391Z",
+   "symbol": "BILI",
+   "qty": "201",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "13.64",
+   "time_in_force": "day",
+   "client_order_id": "fadep-20261102-BILI-1",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 201, available: 0)"
+  },
+  {
+   "at": "2026-11-02T14:36:44.419Z",
+   "symbol": "CBRE",
+   "qty": "41",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "129.72",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-CBRE-1",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 41, available: 0)"
+  },
+  {
+   "at": "2026-11-02T14:36:44.498Z",
+   "symbol": "CHKP",
+   "qty": "41",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "146.24",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-CHKP-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "6d91c2f0-bd40-403c-9418-9c6cb0e3829f"
+  },
+  {
+   "at": "2026-11-02T14:36:44.521Z",
+   "symbol": "FLYW",
+   "qty": "128",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "19.89",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-FLYW-1",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-02T14:36:44.546Z",
+   "symbol": "IDXX",
+   "qty": "4",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "652.51",
+   "time_in_force": "day",
+   "client_order_id": "fadep-20261102-IDXX-1",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 4, available: 0)"
+  },
+  {
+   "at": "2026-11-02T14:36:44.571Z",
+   "symbol": "JEF",
+   "qty": "86",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "47.79",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-JEF-1",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 86, available: 0)"
+  },
+  {
+   "at": "2026-11-02T14:36:44.605Z",
+   "symbol": "PCVX",
+   "qty": "78",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "62.49",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-PCVX-1",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-11-02T14:36:44.628Z",
+   "symbol": "QURE",
+   "qty": "29",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "24.68",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-QURE-1",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 29, available: 0)"
+  },
+  {
+   "at": "2026-11-02T14:37:44.918Z",
+   "symbol": "AXSM",
+   "qty": "12",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "129.90",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-AXSM-1",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 12, available: 0)"
+  },
+  {
+   "at": "2026-11-02T14:37:44.940Z",
+   "symbol": "CBRE",
+   "qty": "44",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "129.72",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-CBRE-1",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 44, available: 0)"
+  },
+  {
+   "at": "2026-11-02T14:37:45.002Z",
+   "symbol": "FLYW",
+   "qty": "299",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "19.89",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-FLYW-1",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-02T14:37:45.026Z",
+   "symbol": "FWONK",
+   "qty": "52",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "92.26",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-FWONK-1",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 52, available: 0)"
+  },
+  {
+   "at": "2026-11-02T14:37:45.048Z",
+   "symbol": "IDXX",
+   "qty": "8",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "652.51",
+   "time_in_force": "day",
+   "client_order_id": "fadep-20261102-IDXX-1",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-11-02T14:37:45.074Z",
+   "symbol": "PCVX",
+   "qty": "83",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "62.49",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-PCVX-1",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-11-02T14:37:45.095Z",
+   "symbol": "PWP",
+   "qty": "404",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "14.73",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-PWP-1",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-02T14:37:45.116Z",
+   "symbol": "QURE",
+   "qty": "237",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "24.68",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-QURE-1",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 237, available: 0)"
+  },
+  {
+   "at": "2026-11-02T14:37:45.143Z",
+   "symbol": "STNG",
+   "qty": "29",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "91.71",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-STNG-1",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 29, available: 0)"
+  },
+  {
+   "at": "2026-11-02T14:38:45.671Z",
+   "symbol": "AXSM",
+   "qty": "45",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "129.90",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-AXSM-1",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-02T14:38:45.696Z",
+   "symbol": "FLYW",
+   "qty": "299",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "19.89",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-FLYW-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "b197dfd8-f8f2-4dd9-be92-fbb7a06beb0a"
+  },
+  {
+   "at": "2026-11-02T14:38:45.759Z",
+   "symbol": "PCVX",
+   "qty": "96",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "62.49",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-PCVX-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "6fdfa6dd-411b-4b59-8e3a-5bd7474292b3"
+  },
+  {
+   "at": "2026-11-02T14:38:45.781Z",
+   "symbol": "PWP",
+   "qty": "404",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "14.73",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-PWP-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "e2193bbe-de17-4d59-8901-1a1a99965aca"
+  },
+  {
+   "at": "2026-11-02T14:38:45.849Z",
+   "symbol": "IDXX",
+   "qty": "9",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadep-20261102-IDXX-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "2bf7fdbb-0a12-4ca5-ac4f-d0d262edfcd4"
+  },
+  {
+   "at": "2026-11-02T14:40:06.234Z",
+   "symbol": "AXSM",
+   "qty": "45",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "129.90",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-AXSM-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "57d4f25e-8efd-475d-a2d2-108ddcd5beea"
+  },
+  {
+   "at": "2026-11-02T14:50:25.156Z",
+   "symbol": "APD",
+   "qty": "18",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-APD-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "3b13773a-7044-4149-9d0c-dde1026dfd2f"
+  },
+  {
+   "at": "2026-11-02T15:00:46.738Z",
+   "symbol": "EL",
+   "qty": "55",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "108.22",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261102-EL-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "6493646e-939e-4e65-a482-433c6c821e33"
+  }
+ ],
+ "log": [
+  "13:05:49Z books {\"orb\":{\"pnl\":-388.4802109999946,\"fills\":64,\"halted\":false,\"at\":\"2026-11-02T13:05:49.815Z\"},\"fade\":{\"pnl\":-1075.8800000000037,\"fills\":32,\"halted\":false,\"at\":\"2026-11-02T13:05:49.815Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-11-02T13:05:49.815Z\"}}",
+  "13:05:50Z assets 5689",
+  "13:06:18Z liquid universe 2035",
+  "14:35:42Z ORDER orb-20261102-FLYW rejected:stop price must be greater than current price",
+  "14:35:42Z ORDER orbm-20261102-FLYW pending_new",
+  "14:35:42Z ORDER orb-20261102-QURE rejected:stop price must be less than current price",
+  "14:35:42Z ORDER orbm-20261102-QURE pending_new",
+  "14:35:42Z ORDER orb-20261102-BXP rejected:stop price must be greater than current price",
+  "14:35:43Z ORDER orbm-20261102-BXP pending_new",
+  "14:35:43Z ORDER orb-20261102-FTV rejected:stop price must be greater than current price",
+  "14:35:43Z ORDER orbm-20261102-FTV pending_new",
+  "14:35:43Z ORDER orb-20261102-PWP rejected:stop price must be greater than current price",
+  "14:35:43Z ORDER orbm-20261102-PWP pending_new",
+  "14:35:43Z ORDER orb-20261102-ECHO pending_new",
+  "14:35:43Z ORDER orb-20261102-FWONK pending_new",
+  "14:35:43Z ORDER orb-20261102-JEF rejected:stop price must be greater than current price",
+  "14:35:43Z ORDER orbm-20261102-JEF pending_new",
+  "14:35:43Z ORDER orb-20261102-WRBY pending_new",
+  "14:35:43Z ORDER orb-20261102-STNG rejected:stop price must be less than current price",
+  "14:35:43Z ORDER orbm-20261102-STNG pending_new",
+  "14:35:43Z ORDER orb-20261102-CHKP rejected:stop price must be less than current price",
+  "14:35:43Z ORDER orbm-20261102-CHKP pending_new",
+  "14:35:43Z ORDER orb-20261102-EL pending_new",
+  "14:35:43Z ORDER orb-20261102-CBRE rejected:stop price must be greater than current price",
+  "14:35:43Z ORDER orbm-20261102-CBRE pending_new",
+  "14:35:43Z ORDER orb-20261102-BFLY pending_new",
+  "14:35:43Z ORDER orb-20261102-ROKU pending_new",
+  "14:35:43Z ORDER orb-20261102-SYF pending_new",
+  "14:35:43Z ORDER orb-20261102-FOXA pending_new",
+  "14:35:43Z ORDER orb-20261102-PCVX rejected:stop price must be less than current price",
+  "14:35:43Z ORDER orbm-20261102-PCVX pending_new",
+  "14:35:43Z ORDER orb-20261102-APD pending_new",
+  "14:35:43Z ORDER orb-20261102-AXSM pending_new",
+  "14:35:43Z ORDER fade-20261102-IDXX pending_new",
+  "14:35:44Z ORDER fade-20261102-MAR pending_new",
+  "14:35:44Z ORDER fade-20261102-BILI pending_new",
+  "14:36:44Z PROTECT BILI -201 px 13.4 stop 13.64 stop",
+  "14:36:44Z ORDER-ERR fadep-20261102-BILI-1 POST /v2/orders -> 403 insufficient qty available for order (requested: 201, available: 0)",
+  "14:36:44Z PROTECT CBRE 41 px 130.185 stop 129.72 stop",
+  "14:36:44Z ORDER-ERR orbp-20261102-CBRE-1 POST /v2/orders -> 403 insufficient qty available for order (requested: 41, available: 0)",
+  "14:36:44Z PROTECT CHKP -41 px 146.22 stop 146.24 stop",
+  "14:36:44Z ORDER orbp-20261102-CHKP-1 pending_new",
+  "14:36:44Z PROTECT FLYW 128 px 19.965 stop 19.89 stop",
+  "14:36:44Z ORDER orbp-20261102-FLYW-1 rejected:stop price must be less than current price",
+  "14:36:44Z PROTECT IDXX -4 px 647.395 stop 652.51 stop",
+  "14:36:44Z ORDER-ERR fadep-20261102-IDXX-1 POST /v2/orders -> 403 insufficient qty available for order (requested: 4, available: 0)",
+  "14:36:44Z PROTECT JEF 86 px 47.83 stop 47.79 stop",
+  "14:36:44Z ORDER-ERR orbp-20261102-JEF-1 POST /v2/orders -> 403 insufficient qty available for order (requested: 86, available: 0)",
+  "14:36:44Z PROTECT PCVX -78 px 62.355 stop 62.49 stop",
+  "14:36:44Z ORDER orbp-20261102-PCVX-1 rejected:stop price must be greater than current price",
+  "14:36:44Z PROTECT QURE -29 px 24.2 stop 24.68 stop",
+  "14:36:44Z ORDER-ERR orbp-20261102-QURE-1 POST /v2/orders -> 403 insufficient qty available for order (requested: 29, available: 0)",
+  "14:37:44Z PROTECT AXSM 12 px 132.04 stop 129.9 stop",
+  "14:37:44Z ORDER-ERR orbp-20261102-AXSM-1 POST /v2/orders -> 403 insufficient qty available for order (requested: 12, available: 0)",
+  "14:37:44Z PROTECT CBRE 44 px 130.185 stop 129.72 stop",
+  "14:37:45Z ORDER-ERR orbp-20261102-CBRE-1 POST /v2/orders -> 403 insufficient qty available for order (requested: 44, available: 0)",
+  "14:37:45Z PROTECT FLYW 299 px 19.965 stop 19.89 stop",
+  "14:37:45Z ORDER orbp-20261102-FLYW-1 rejected:stop price must be less than current price",
+  "14:37:45Z PROTECT FWONK -52 px 91.88 stop 92.26 stop",
+  "14:37:45Z ORDER-ERR orbp-20261102-FWONK-1 POST /v2/orders -> 403 insufficient qty available for order (requested: 52, available: 0)",
+  "14:37:45Z PROTECT IDXX -8 px 650 stop 652.51 stop",
+  "14:37:45Z ORDER fadep-20261102-IDXX-1 rejected:stop price must be greater than current price",
+  "14:37:45Z PROTECT PCVX -83 px 62.355 stop 62.49 stop",
+  "14:37:45Z ORDER orbp-20261102-PCVX-1 rejected:stop price must be greater than current price",
+  "14:37:45Z PROTECT PWP 404 px 14.77 stop 14.73 stop",
+  "14:37:45Z ORDER orbp-20261102-PWP-1 rejected:stop price must be less than current price",
+  "14:37:45Z PROTECT QURE -237 px 23.75 stop 24.68 stop",
+  "14:37:45Z ORDER-ERR orbp-20261102-QURE-1 POST /v2/orders -> 403 insufficient qty available for order (requested: 237, available: 0)",
+  "14:37:45Z PROTECT STNG -29 px 90 stop 91.71 stop",
+  "14:37:45Z ORDER-ERR orbp-20261102-STNG-1 POST /v2/orders -> 403 insufficient qty available for order (requested: 29, available: 0)",
+  "14:38:45Z PROTECT AXSM 45 px 130.78 stop 129.9 stop",
+  "14:38:45Z ORDER orbp-20261102-AXSM-1 rejected:stop price must be less than current price",
+  "14:38:45Z PROTECT FLYW 299 px 20.025 stop 19.89 stop",
+  "14:38:45Z ORDER orbp-20261102-FLYW-1 pending_new",
+  "14:38:45Z PROTECT IDXX -9 px 655.14 stop 652.51 close",
+  "14:38:45Z PROTECT PCVX -96 px 62.355 stop 62.49 stop",
+  "14:38:45Z ORDER orbp-20261102-PCVX-1 pending_new",
+  "14:38:45Z PROTECT PWP 404 px 14.77 stop 14.73 stop",
+  "14:38:45Z ORDER orbp-20261102-PWP-1 pending_new",
+  "14:38:45Z ORDER fadep-20261102-IDXX-1 pending_new",
+  "14:40:06Z PROTECT AXSM 45 px 131.01 stop 129.9 stop",
+  "14:40:06Z ORDER orbp-20261102-AXSM-1 pending_new",
+  "14:50:22Z PROTECT APD 18 px 316.63 stop 316.79 close",
+  "14:50:25Z ORDER orbp-20261102-APD-1 pending_new",
+  "15:00:46Z PROTECT EL -55 px 107.04 stop 108.22 stop",
+  "15:00:46Z ORDER orbp-20261102-EL-1 pending_new",
+  "18:45:49Z deadline before pairs time; next run continues"
+ ],
+ "calls": 792,
+ "endedAt": "2026-11-02T18:45:49.430Z"
+}
