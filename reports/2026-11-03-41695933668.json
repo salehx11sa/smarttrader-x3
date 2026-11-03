@@ -1,0 +1,157 @@
+{
+ "version": "x3-1.3",
+ "trading": true,
+ "startedAt": "2026-11-03T18:46:33.284Z",
+ "runId": "41695933668",
+ "phases": {
+  "pairs": {
+   "at": "2026-11-03T20:45:00.244Z",
+   "acts": [
+    {
+     "pair": "AXP/COF",
+     "pa": 324.745,
+     "pb": 207.805,
+     "act": "none",
+     "spread": 0.004685359892563801,
+     "sigma": 0.039841
+    },
+    {
+     "pair": "BAC/JPM",
+     "pa": 49.545,
+     "pb": 336.59,
+     "act": "none",
+     "spread": -0.03518463407078187,
+     "sigma": 0.033676
+    },
+    {
+     "pair": "HD/SYK",
+     "pa": 332.52,
+     "pb": 308.895,
+     "act": "none",
+     "spread": 0.03399606535437183,
+     "sigma": 0.03909
+    },
+    {
+     "pair": "COP/XOM",
+     "pa": 144.49,
+     "pb": 177.585,
+     "act": "none",
+     "spread": -0.011141028753802074,
+     "sigma": 0.04689
+    },
+    {
+     "pair": "KO/PM",
+     "pa": 94.745,
+     "pb": 207.915,
+     "act": "none",
+     "spread": -0.020387026374935946,
+     "sigma": 0.04524
+    },
+    {
+     "pair": "DIS/MA",
+     "pa": 114.39,
+     "pb": 646.38,
+     "act": "none",
+     "spread": -0.01991055912631423,
+     "sigma": 0.050429
+    },
+    {
+     "pair": "GILD/PFE",
+     "pa": 168.135,
+     "pb": 29.95,
+     "act": "none",
+     "spread": 0.08017617902903729,
+     "sigma": 0.047204
+    },
+    {
+     "pair": "AZO/TMUS",
+     "pa": 3192.345,
+     "pb": 154.71,
+     "act": "none",
+     "spread": -0.058381758607272904,
+     "sigma": 0.054945
+    },
+    {
+     "pair": "COST/NEE",
+     "pa": 1021.45,
+     "pb": 83.92,
+     "act": "none",
+     "spread": -0.004098080123078107,
+     "sigma": 0.043856
+    },
+    {
+     "pair": "DE/JNJ",
+     "pa": 667.57,
+     "pb": 265.455,
+     "act": "none",
+     "spread": 0.02691464901131857,
+     "sigma": 0.055851
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -1432.9099260000003,
+   "fills": 130,
+   "halted": false,
+   "at": "2026-11-03T20:56:32.084Z"
+  },
+  "fade": {
+   "pnl": -1459.3099780000039,
+   "fills": 48,
+   "halted": false,
+   "at": "2026-11-03T20:56:32.084Z"
+  },
+  "pair": {
+   "pnl": 0,
+   "fills": 0,
+   "halted": false,
+   "at": "2026-11-03T20:56:32.084Z"
+  }
+ },
+ "date": "2026-11-03",
+ "open": "2026-11-03T14:30:00.000Z",
+ "close": "2026-11-03T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-03T20:55:02.770Z",
+   "symbol": "PHG",
+   "qty": "207",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261103-PHG",
+   "sent": true,
+   "result": "pending_new",
+   "id": "cd7df432-555c-41fa-83c1-e4ca3bcc587f"
+  },
+  {
+   "at": "2026-11-03T20:55:11.667Z",
+   "symbol": "RVTY",
+   "qty": "35",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261103-RVTY",
+   "sent": true,
+   "result": "pending_new",
+   "id": "33c8b5fd-7f12-458b-a424-5c5b37959295"
+  }
+ ],
+ "log": [
+  "18:46:33Z books {\"orb\":{\"pnl\":-1432.9099260000003,\"fills\":130,\"halted\":false,\"at\":\"2026-11-03T18:46:33.836Z\"},\"fade\":{\"pnl\":-1596.1999780000097,\"fills\":46,\"halted\":false,\"at\":\"2026-11-03T18:46:33.837Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-11-03T18:46:33.837Z\"}}",
+  "20:50:00Z cancel entry orb-20261103-HSIC",
+  "20:50:00Z cancel entry orb-20261103-KMX",
+  "20:50:00Z cancel entry orb-20261103-FISV",
+  "20:50:00Z cancel entry orb-20261103-KDP",
+  "20:50:00Z cancel entry orb-20261103-LSCC",
+  "20:50:00Z cancel entry orb-20261103-BETA",
+  "20:50:00Z cancel entry orb-20261103-AMTM",
+  "20:55:02Z ORDER fadex-20261103-PHG pending_new",
+  "20:55:11Z ORDER fadex-20261103-RVTY pending_new",
+  "20:56:32Z books {\"orb\":{\"pnl\":-1432.9099260000003,\"fills\":130,\"halted\":false,\"at\":\"2026-11-03T20:56:32.084Z\"},\"fade\":{\"pnl\":-1459.3099780000039,\"fills\":48,\"halted\":false,\"at\":\"2026-11-03T20:56:32.084Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-11-03T20:56:32.084Z\"}}"
+ ],
+ "calls": 278,
+ "endedAt": "2026-11-03T20:56:32.084Z"
+}
