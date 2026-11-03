@@ -1,0 +1,938 @@
+{
+ "version": "x3-1.3",
+ "trading": true,
+ "startedAt": "2026-11-03T13:05:49.440Z",
+ "runId": "41641261835",
+ "phases": {
+  "universe": {
+   "n": 2031,
+   "at": "2026-11-03T13:08:22.112Z"
+  },
+  "decisions": {
+   "at": "2026-11-03T14:35:54.740Z",
+   "withBar": 1604,
+   "orb": [
+    {
+     "sym": "TVTX",
+     "rvol": 35.32149386262732,
+     "dir": "short",
+     "atr": 2.451707142857141,
+     "h": 47.55,
+     "l": 45.12,
+     "c": 45.74,
+     "entry": 45.12,
+     "stop": 45.37,
+     "qty": 132
+    },
+    {
+     "sym": "LIFE",
+     "rvol": 28.934391976598413,
+     "dir": "short",
+     "atr": 2.4391,
+     "h": 48.21,
+     "l": 44.13,
+     "c": 44.46,
+     "entry": 44.13,
+     "stop": 44.38,
+     "qty": 135
+    },
+    {
+     "sym": "CMPS",
+     "rvol": 27.471713615023475,
+     "dir": "long",
+     "atr": 0.8860071428571429,
+     "h": 9.355,
+     "l": 8.69,
+     "c": 9.245,
+     "entry": 9.36,
+     "stop": 9.27,
+     "qty": 641
+    },
+    {
+     "sym": "SGML",
+     "rvol": 26.39788244607164,
+     "dir": "long",
+     "atr": 0.7024357142857143,
+     "h": 5.61,
+     "l": 5.19,
+     "c": 5.57,
+     "entry": 5.61,
+     "stop": 5.53,
+     "qty": 1069
+    },
+    {
+     "sym": "ADEA",
+     "rvol": 26.253135536075522,
+     "dir": "long",
+     "atr": 1.169285714285714,
+     "h": 17.84,
+     "l": 17.01,
+     "c": 17.54,
+     "entry": 17.84,
+     "stop": 17.72,
+     "qty": 336
+    },
+    {
+     "sym": "APTV",
+     "rvol": 20.248870636550308,
+     "dir": "short",
+     "atr": 1.2428500000000007,
+     "h": 45.61,
+     "l": 44.24,
+     "c": 44.27,
+     "entry": 44.24,
+     "stop": 44.37,
+     "qty": 135
+    },
+    {
+     "sym": "AMTM",
+     "rvol": 19.026582683890254,
+     "dir": "short",
+     "atr": 0.7433571428571428,
+     "h": 22.24,
+     "l": 21.66,
+     "c": 21.74,
+     "entry": 21.66,
+     "stop": 21.74,
+     "qty": 277
+    },
+    {
+     "sym": "DT",
+     "rvol": 18.70743709116624,
+     "dir": "long",
+     "atr": 2.492385714285714,
+     "h": 47.39,
+     "l": 45.61,
+     "c": 47.39,
+     "entry": 47.39,
+     "stop": 47.14,
+     "qty": 126
+    },
+    {
+     "sym": "BETA",
+     "rvol": 18.61332007952286,
+     "dir": "short",
+     "atr": 1.2947071428571435,
+     "h": 23.08,
+     "l": 22.27,
+     "c": 22.625,
+     "entry": 22.27,
+     "stop": 22.4,
+     "qty": 269
+    },
+    {
+     "sym": "LSCC",
+     "rvol": 18.294985509791868,
+     "dir": "short",
+     "atr": 6.542757142857142,
+     "h": 109.355,
+     "l": 101.775,
+     "c": 106.41,
+     "entry": 101.77,
+     "stop": 102.43,
+     "qty": 58
+    },
+    {
+     "sym": "APO",
+     "rvol": 14.96790631584105,
+     "dir": "short",
+     "atr": 3.9424999999999994,
+     "h": 116.9,
+     "l": 113,
+     "c": 113,
+     "entry": 113,
+     "stop": 113.4,
+     "qty": 53
+    },
+    {
+     "sym": "KDP",
+     "rvol": 13.108517037649811,
+     "dir": "long",
+     "atr": 0.7972142857142873,
+     "h": 35.8,
+     "l": 35.1,
+     "c": 35.56,
+     "entry": 35.8,
+     "stop": 35.72,
+     "qty": 167
+    },
+    {
+     "sym": "FISV",
+     "rvol": 12.723074277316572,
+     "dir": "short",
+     "atr": 1.4664285714285714,
+     "h": 56.77,
+     "l": 54.685,
+     "c": 56.06,
+     "entry": 54.68,
+     "stop": 54.83,
+     "qty": 109
+    },
+    {
+     "sym": "KMX",
+     "rvol": 12.463590883824347,
+     "dir": "long",
+     "atr": 2.4572499999999997,
+     "h": 55.6,
+     "l": 54.3,
+     "c": 55.16,
+     "entry": 55.6,
+     "stop": 55.35,
+     "qty": 107
+    },
+    {
+     "sym": "HSIC",
+     "rvol": 11.573789337548499,
+     "dir": "short",
+     "atr": 1.8936714285714282,
+     "h": 81.86,
+     "l": 81.695,
+     "c": 81.695,
+     "entry": 81.69,
+     "stop": 81.88,
+     "qty": 73
+    },
+    {
+     "sym": "BLZE",
+     "rvol": 11.565168539325843,
+     "dir": "short",
+     "atr": 0.962707142857143,
+     "h": 9.3,
+     "l": 7.93,
+     "c": 8.11,
+     "entry": 7.93,
+     "stop": 8.03,
+     "qty": 756
+    },
+    {
+     "sym": "NBIX",
+     "rvol": 11.247165922363449,
+     "dir": "long",
+     "atr": 3.1592357142857117,
+     "h": 165.15,
+     "l": 158.32,
+     "c": 164.665,
+     "entry": 165.15,
+     "stop": 164.83,
+     "qty": 36
+    },
+    {
+     "sym": "BMRN",
+     "rvol": 11.202086882453152,
+     "dir": "long",
+     "atr": 1.6977071428571417,
+     "h": 54.62,
+     "l": 52.885,
+     "c": 54.62,
+     "entry": 54.62,
+     "stop": 54.45,
+     "qty": 109
+    },
+    {
+     "sym": "RYAAY",
+     "rvol": 10.850568688086378,
+     "dir": "short",
+     "atr": 1.4987,
+     "h": 55.92,
+     "l": 55.46,
+     "c": 55.465,
+     "entry": 55.46,
+     "stop": 55.61,
+     "qty": 108
+    },
+    {
+     "sym": "FIS",
+     "rvol": 9.697873503028095,
+     "dir": "short",
+     "atr": 1.3357071428571423,
+     "h": 40.73,
+     "l": 39.88,
+     "c": 39.9,
+     "entry": 39.88,
+     "stop": 40.02,
+     "qty": 150
+    }
+   ],
+   "fade": [
+    {
+     "sym": "DD",
+     "gap": 0.07430997876857748,
+     "z": 5.6144595754298035,
+     "atr": 2.7593214285714285,
+     "ref": 152.28,
+     "stop": 153.66,
+     "qty": 39
+    },
+    {
+     "sym": "GPK",
+     "gap": 0.13076098606645248,
+     "z": 4.615997522041153,
+     "atr": 0.3542857142857145,
+     "ref": 10.64,
+     "stop": 10.82,
+     "qty": 563
+    },
+    {
+     "sym": "PHG",
+     "gap": 0.05183037332366802,
+     "z": 4.2281195361303325,
+     "atr": 0.4864285714285721,
+     "ref": 28.92,
+     "stop": 29.17,
+     "qty": 207
+    },
+    {
+     "sym": "SRAD",
+     "gap": 0.13675213675213693,
+     "z": 4.220096441008937,
+     "atr": 0.6192857142857146,
+     "ref": 14.59,
+     "stop": 14.9,
+     "qty": 411
+    },
+    {
+     "sym": "RVTY",
+     "gap": 0.08835751978891837,
+     "z": 4.131788985094028,
+     "atr": 6.526235714285709,
+     "ref": 168.57,
+     "stop": 171.84,
+     "qty": 35
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -337.25012199999765,
+   "fills": 104,
+   "halted": false,
+   "at": "2026-11-03T13:05:50.273Z"
+  },
+  "fade": {
+   "pnl": -1263.1099780000031,
+   "fills": 38,
+   "halted": false,
+   "at": "2026-11-03T13:05:50.273Z"
+  },
+  "pair": {
+   "pnl": 0,
+   "fills": 0,
+   "halted": false,
+   "at": "2026-11-03T13:05:50.273Z"
+  }
+ },
+ "date": "2026-11-03",
+ "open": "2026-11-03T14:30:00.000Z",
+ "close": "2026-11-03T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-03T14:35:54.740Z",
+   "symbol": "TVTX",
+   "qty": "132",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "45.12",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "45.37"
+   },
+   "client_order_id": "orb-20261103-TVTX",
+   "sent": true,
+   "result": "pending_new",
+   "id": "24b35679-2fab-426e-8827-c0e4254ac41e"
+  },
+  {
+   "at": "2026-11-03T14:35:54.934Z",
+   "symbol": "LIFE",
+   "qty": "135",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "44.13",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "44.38"
+   },
+   "client_order_id": "orb-20261103-LIFE",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-03T14:35:55.056Z",
+   "symbol": "LIFE",
+   "qty": "135",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "43.93"
+   },
+   "client_order_id": "orbm-20261103-LIFE",
+   "sent": true,
+   "result": "pending_new",
+   "id": "a3a96b90-25cb-4380-94d9-a1101d256fe1"
+  },
+  {
+   "at": "2026-11-03T14:35:55.118Z",
+   "symbol": "CMPS",
+   "qty": "641",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "9.36",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "9.27"
+   },
+   "client_order_id": "orb-20261103-CMPS",
+   "sent": true,
+   "result": "pending_new",
+   "id": "ed5ee5a6-84b8-4a11-9508-22ef98dd08a0"
+  },
+  {
+   "at": "2026-11-03T14:35:55.180Z",
+   "symbol": "SGML",
+   "qty": "1069",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "5.61",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "5.53"
+   },
+   "client_order_id": "orb-20261103-SGML",
+   "sent": true,
+   "result": "pending_new",
+   "id": "b3a39744-e61a-4c97-8d67-81a2c6aa2c3f"
+  },
+  {
+   "at": "2026-11-03T14:35:55.247Z",
+   "symbol": "ADEA",
+   "qty": "336",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "17.84",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "17.72"
+   },
+   "client_order_id": "orb-20261103-ADEA",
+   "sent": true,
+   "result": "pending_new",
+   "id": "b6c44421-1421-44c5-8f1f-8e8f6bca0769"
+  },
+  {
+   "at": "2026-11-03T14:35:55.306Z",
+   "symbol": "APTV",
+   "qty": "135",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "44.24",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "44.37"
+   },
+   "client_order_id": "orb-20261103-APTV",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-03T14:35:55.422Z",
+   "symbol": "APTV",
+   "qty": "135",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "44.30"
+   },
+   "client_order_id": "orbm-20261103-APTV",
+   "sent": true,
+   "result": "pending_new",
+   "id": "fafc5e73-813b-4d17-8491-993d41c394e9"
+  },
+  {
+   "at": "2026-11-03T14:35:55.497Z",
+   "symbol": "AMTM",
+   "qty": "277",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "21.66",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "21.74"
+   },
+   "client_order_id": "orb-20261103-AMTM",
+   "sent": true,
+   "result": "pending_new",
+   "id": "42034a63-e102-4c6a-8154-bb3770020bf4"
+  },
+  {
+   "at": "2026-11-03T14:35:55.562Z",
+   "symbol": "DT",
+   "qty": "126",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "47.39",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "47.14"
+   },
+   "client_order_id": "orb-20261103-DT",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-11-03T14:35:55.679Z",
+   "symbol": "DT",
+   "qty": "126",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "47.49"
+   },
+   "client_order_id": "orbm-20261103-DT",
+   "sent": true,
+   "result": "pending_new",
+   "id": "1f5d71da-e1a2-425b-8844-ba0f1c149056"
+  },
+  {
+   "at": "2026-11-03T14:35:55.752Z",
+   "symbol": "BETA",
+   "qty": "269",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "22.27",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "22.40"
+   },
+   "client_order_id": "orb-20261103-BETA",
+   "sent": true,
+   "result": "pending_new",
+   "id": "d530bc60-15a7-496d-9299-b14f5f2f252c"
+  },
+  {
+   "at": "2026-11-03T14:35:55.813Z",
+   "symbol": "LSCC",
+   "qty": "58",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "101.77",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "102.43"
+   },
+   "client_order_id": "orb-20261103-LSCC",
+   "sent": true,
+   "result": "pending_new",
+   "id": "a8defd53-b122-43a8-9693-34ee1b038432"
+  },
+  {
+   "at": "2026-11-03T14:35:55.920Z",
+   "symbol": "APO",
+   "qty": "53",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "113.00",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "113.40"
+   },
+   "client_order_id": "orb-20261103-APO",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-03T14:35:56.039Z",
+   "symbol": "APO",
+   "qty": "53",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "113.70"
+   },
+   "client_order_id": "orbm-20261103-APO",
+   "sent": true,
+   "result": "pending_new",
+   "id": "b8b8b5ce-1541-495f-b438-456e4aa90f7d"
+  },
+  {
+   "at": "2026-11-03T14:35:56.100Z",
+   "symbol": "KDP",
+   "qty": "167",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "35.80",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "35.72"
+   },
+   "client_order_id": "orb-20261103-KDP",
+   "sent": true,
+   "result": "pending_new",
+   "id": "d34e16d4-1273-4982-beb0-dcb2d11603a2"
+  },
+  {
+   "at": "2026-11-03T14:35:56.160Z",
+   "symbol": "FISV",
+   "qty": "109",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "54.68",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "54.83"
+   },
+   "client_order_id": "orb-20261103-FISV",
+   "sent": true,
+   "result": "pending_new",
+   "id": "b3c82499-4d48-44a5-9564-5b9839567ff1"
+  },
+  {
+   "at": "2026-11-03T14:35:56.224Z",
+   "symbol": "KMX",
+   "qty": "107",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "55.60",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "55.35"
+   },
+   "client_order_id": "orb-20261103-KMX",
+   "sent": true,
+   "result": "pending_new",
+   "id": "f00f90b0-e3e9-4ceb-ac30-493c841e4530"
+  },
+  {
+   "at": "2026-11-03T14:35:56.302Z",
+   "symbol": "HSIC",
+   "qty": "73",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "81.69",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "81.88"
+   },
+   "client_order_id": "orb-20261103-HSIC",
+   "sent": true,
+   "result": "pending_new",
+   "id": "bb730f55-98a9-4960-a802-367c3cb9b3ef"
+  },
+  {
+   "at": "2026-11-03T14:35:56.374Z",
+   "symbol": "BLZE",
+   "qty": "756",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "7.93",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "8.03"
+   },
+   "client_order_id": "orb-20261103-BLZE",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-03T14:35:56.491Z",
+   "symbol": "BLZE",
+   "qty": "756",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "8.02"
+   },
+   "client_order_id": "orbm-20261103-BLZE",
+   "sent": true,
+   "result": "pending_new",
+   "id": "27b0e17a-cac5-4f3f-ae3b-6fa46c714ef7"
+  },
+  {
+   "at": "2026-11-03T14:35:56.610Z",
+   "symbol": "NBIX",
+   "qty": "36",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "165.15",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "164.83"
+   },
+   "client_order_id": "orb-20261103-NBIX",
+   "sent": true,
+   "result": "pending_new",
+   "id": "a3979a33-90c1-44a0-9d10-40279da02f41"
+  },
+  {
+   "at": "2026-11-03T14:35:56.675Z",
+   "symbol": "BMRN",
+   "qty": "109",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "54.62",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "54.45"
+   },
+   "client_order_id": "orb-20261103-BMRN",
+   "sent": true,
+   "result": "pending_new",
+   "id": "81f51e19-6cb1-4389-95f9-16e9909aed7c"
+  },
+  {
+   "at": "2026-11-03T14:35:56.737Z",
+   "symbol": "RYAAY",
+   "qty": "108",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "55.46",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "55.61"
+   },
+   "client_order_id": "orb-20261103-RYAAY",
+   "sent": true,
+   "result": "rejected:stop price must be less than current price"
+  },
+  {
+   "at": "2026-11-03T14:35:56.854Z",
+   "symbol": "RYAAY",
+   "qty": "108",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "55.44"
+   },
+   "client_order_id": "orbm-20261103-RYAAY",
+   "sent": true,
+   "result": "pending_new",
+   "id": "5805c5c6-2c60-4520-8d22-c1d9dcd37034"
+  },
+  {
+   "at": "2026-11-03T14:35:56.918Z",
+   "symbol": "FIS",
+   "qty": "150",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "39.88",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "40.02"
+   },
+   "client_order_id": "orb-20261103-FIS",
+   "sent": true,
+   "result": "pending_new",
+   "id": "f8a60abd-749e-49d1-90b8-3b202bb78a39"
+  },
+  {
+   "at": "2026-11-03T14:35:56.981Z",
+   "symbol": "DD",
+   "qty": "39",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "153.66"
+   },
+   "client_order_id": "fade-20261103-DD",
+   "sent": true,
+   "result": "pending_new",
+   "id": "b684c8f8-40b6-4c55-9c5d-abc9980c6f0b"
+  },
+  {
+   "at": "2026-11-03T14:35:57.043Z",
+   "symbol": "GPK",
+   "qty": "563",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "10.82"
+   },
+   "client_order_id": "fade-20261103-GPK",
+   "sent": true,
+   "result": "pending_new",
+   "id": "2180448b-2cba-4cec-8c8b-93bc1ffbba35"
+  },
+  {
+   "at": "2026-11-03T14:35:57.104Z",
+   "symbol": "PHG",
+   "qty": "207",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "29.17"
+   },
+   "client_order_id": "fade-20261103-PHG",
+   "sent": true,
+   "result": "pending_new",
+   "id": "6ed320f2-8077-4d6c-830c-f954777f1e9c"
+  },
+  {
+   "at": "2026-11-03T14:35:57.201Z",
+   "symbol": "SRAD",
+   "qty": "411",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "14.90"
+   },
+   "client_order_id": "fade-20261103-SRAD",
+   "sent": true,
+   "result": "pending_new",
+   "id": "5f593152-2e5a-4e08-8d49-4eb1c1aa4d56"
+  },
+  {
+   "at": "2026-11-03T14:35:57.264Z",
+   "symbol": "RVTY",
+   "qty": "35",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "171.84"
+   },
+   "client_order_id": "fade-20261103-RVTY",
+   "sent": true,
+   "result": "pending_new",
+   "id": "1dfdea14-e226-45ec-bbfc-fd2413ca59bc"
+  },
+  {
+   "at": "2026-11-03T14:36:58.150Z",
+   "symbol": "DD",
+   "qty": "39",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "153.66",
+   "time_in_force": "day",
+   "client_order_id": "fadep-20261103-DD-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "7cffb196-3f66-43b5-8aa5-cbd1c91f9760"
+  },
+  {
+   "at": "2026-11-03T14:38:59.056Z",
+   "symbol": "BMRN",
+   "qty": "109",
+   "side": "sell",
+   "type": "stop",
+   "stop_price": "54.45",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261103-BMRN-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "a4d25e61-37d5-4d0c-84a6-de7c30f5eac0"
+  },
+  {
+   "at": "2026-11-03T15:02:21.510Z",
+   "symbol": "TVTX",
+   "qty": "131",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "45.37",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261103-TVTX-1",
+   "sent": true,
+   "result": "rejected:stop price must be greater than current price"
+  },
+  {
+   "at": "2026-11-03T15:03:22.116Z",
+   "symbol": "TVTX",
+   "qty": "132",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "45.37",
+   "time_in_force": "day",
+   "client_order_id": "orbp-20261103-TVTX-1",
+   "sent": true,
+   "result": "pending_new",
+   "id": "f8f63298-ba9a-4b65-8fad-b362e6eda146"
+  }
+ ],
+ "log": [
+  "13:05:50Z books {\"orb\":{\"pnl\":-337.25012199999765,\"fills\":104,\"halted\":false,\"at\":\"2026-11-03T13:05:50.273Z\"},\"fade\":{\"pnl\":-1263.1099780000031,\"fills\":38,\"halted\":false,\"at\":\"2026-11-03T13:05:50.273Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-11-03T13:05:50.273Z\"}}",
+  "13:05:50Z assets 5686",
+  "13:06:39Z liquid universe 2031",
+  "14:35:54Z ORDER orb-20261103-TVTX pending_new",
+  "14:35:54Z ORDER orb-20261103-LIFE rejected:stop price must be less than current price",
+  "14:35:55Z ORDER orbm-20261103-LIFE pending_new",
+  "14:35:55Z ORDER orb-20261103-CMPS pending_new",
+  "14:35:55Z ORDER orb-20261103-SGML pending_new",
+  "14:35:55Z ORDER orb-20261103-ADEA pending_new",
+  "14:35:55Z ORDER orb-20261103-APTV rejected:stop price must be less than current price",
+  "14:35:55Z ORDER orbm-20261103-APTV pending_new",
+  "14:35:55Z ORDER orb-20261103-AMTM pending_new",
+  "14:35:55Z ORDER orb-20261103-DT rejected:stop price must be greater than current price",
+  "14:35:55Z ORDER orbm-20261103-DT pending_new",
+  "14:35:55Z ORDER orb-20261103-BETA pending_new",
+  "14:35:55Z ORDER orb-20261103-LSCC pending_new",
+  "14:35:55Z ORDER orb-20261103-APO rejected:stop price must be less than current price",
+  "14:35:56Z ORDER orbm-20261103-APO pending_new",
+  "14:35:56Z ORDER orb-20261103-KDP pending_new",
+  "14:35:56Z ORDER orb-20261103-FISV pending_new",
+  "14:35:56Z ORDER orb-20261103-KMX pending_new",
+  "14:35:56Z ORDER orb-20261103-HSIC pending_new",
+  "14:35:56Z ORDER orb-20261103-BLZE rejected:stop price must be less than current price",
+  "14:35:56Z ORDER orbm-20261103-BLZE pending_new",
+  "14:35:56Z ORDER orb-20261103-NBIX pending_new",
+  "14:35:56Z ORDER orb-20261103-BMRN pending_new",
+  "14:35:56Z ORDER orb-20261103-RYAAY rejected:stop price must be less than current price",
+  "14:35:56Z ORDER orbm-20261103-RYAAY pending_new",
+  "14:35:56Z ORDER orb-20261103-FIS pending_new",
+  "14:35:57Z ORDER fade-20261103-DD pending_new",
+  "14:35:57Z ORDER fade-20261103-GPK pending_new",
+  "14:35:57Z ORDER fade-20261103-PHG pending_new",
+  "14:35:57Z ORDER fade-20261103-SRAD pending_new",
+  "14:35:57Z ORDER fade-20261103-RVTY pending_new",
+  "14:36:58Z PROTECT DD -39 px 153.41 stop 153.66 stop",
+  "14:36:58Z ORDER fadep-20261103-DD-1 pending_new",
+  "14:38:59Z PROTECT BMRN 109 px 54.87 stop 54.45 stop",
+  "14:38:59Z ORDER orbp-20261103-BMRN-1 pending_new",
+  "15:02:21Z PROTECT TVTX -131 px 45.27 stop 45.37 stop",
+  "15:02:21Z ORDER orbp-20261103-TVTX-1 rejected:stop price must be greater than current price",
+  "15:03:22Z PROTECT TVTX -132 px 45.35 stop 45.37 stop",
+  "15:03:22Z ORDER orbp-20261103-TVTX-1 pending_new",
+  "18:45:49Z deadline before pairs time; next run continues"
+ ],
+ "calls": 751,
+ "endedAt": "2026-11-03T18:45:49.447Z"
+}
