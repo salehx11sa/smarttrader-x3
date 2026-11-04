@@ -1,0 +1,169 @@
+{
+ "version": "x3-1.3",
+ "trading": true,
+ "startedAt": "2026-11-04T18:46:05.928Z",
+ "runId": "41882727582",
+ "phases": {
+  "pairs": {
+   "at": "2026-11-04T20:45:00.451Z",
+   "acts": [
+    {
+     "pair": "AXP/COF",
+     "pa": 332.36,
+     "pb": 206.725,
+     "act": "none",
+     "spread": 0.03436140587138392,
+     "sigma": 0.039841
+    },
+    {
+     "pair": "BAC/JPM",
+     "pa": 51.49,
+     "pb": 351.57,
+     "act": "none",
+     "spread": -0.04189312285787805,
+     "sigma": 0.033676
+    },
+    {
+     "pair": "HD/SYK",
+     "pa": 355.22,
+     "pb": 342,
+     "act": "none",
+     "spread": -0.0028099434580275418,
+     "sigma": 0.03909
+    },
+    {
+     "pair": "COP/XOM",
+     "pa": 136.09,
+     "pb": 169.54,
+     "act": "none",
+     "spread": -0.022932587975387886,
+     "sigma": 0.04689
+    },
+    {
+     "pair": "KO/PM",
+     "pa": 96.445,
+     "pb": 211.335,
+     "act": "none",
+     "spread": -0.019195712776491236,
+     "sigma": 0.04524
+    },
+    {
+     "pair": "DIS/MA",
+     "pa": 119.135,
+     "pb": 671.95,
+     "act": "none",
+     "spread": -0.018744126908263103,
+     "sigma": 0.050429
+    },
+    {
+     "pair": "GILD/PFE",
+     "pa": 174.91,
+     "pb": 30.74,
+     "act": "open",
+     "spread": 0.09728750699014732,
+     "shortSym": "GILD",
+     "longSym": "PFE",
+     "sigma": 0.047204
+    },
+    {
+     "pair": "AZO/TMUS",
+     "pa": 3324.11,
+     "pb": 158.72,
+     "act": "none",
+     "spread": -0.044579515323347474,
+     "sigma": 0.054945
+    },
+    {
+     "pair": "COST/NEE",
+     "pa": 1052.84,
+     "pb": 88.11,
+     "act": "none",
+     "spread": -0.02384727285193944,
+     "sigma": 0.043856
+    },
+    {
+     "pair": "DE/JNJ",
+     "pa": 674.26,
+     "pb": 277.075,
+     "act": "none",
+     "spread": -0.0067785698323312715,
+     "sigma": 0.055851
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -2491.549857999995,
+   "fills": 160,
+   "halted": false,
+   "at": "2026-11-04T20:56:25.742Z"
+  },
+  "fade": {
+   "pnl": -1854.4599780000053,
+   "fills": 56,
+   "halted": false,
+   "at": "2026-11-04T20:56:25.742Z"
+  },
+  "pair": {
+   "pnl": 0.7150120000001152,
+   "fills": 2,
+   "halted": false,
+   "at": "2026-11-04T20:56:25.742Z"
+  }
+ },
+ "date": "2026-11-04",
+ "open": "2026-11-04T14:30:00.000Z",
+ "close": "2026-11-04T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-04T20:45:00.179Z",
+   "symbol": "GILD",
+   "qty": "9",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "pair-20261104-o-GILD",
+   "sent": true,
+   "result": "pending_new",
+   "id": "57a49f02-7f2a-4f57-a778-3bc4ca090e59"
+  },
+  {
+   "at": "2026-11-04T20:45:00.298Z",
+   "symbol": "PFE",
+   "qty": "49",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "pair-20261104-o-PFE",
+   "sent": true,
+   "result": "pending_new",
+   "id": "a6fa889f-3f5b-4012-8e0c-dfa00561b518"
+  },
+  {
+   "at": "2026-11-04T20:55:05.096Z",
+   "symbol": "CMI",
+   "qty": "12",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261104-CMI",
+   "sent": true,
+   "result": "pending_new",
+   "id": "fb2cb035-cc03-457c-bc18-12da91e6eb58"
+  }
+ ],
+ "log": [
+  "18:46:06Z books {\"orb\":{\"pnl\":-2460.3298539999996,\"fills\":158,\"halted\":false,\"at\":\"2026-11-04T18:46:06.595Z\"},\"fade\":{\"pnl\":-1854.4599780000053,\"fills\":56,\"halted\":false,\"at\":\"2026-11-04T18:46:06.595Z\"},\"pair\":{\"pnl\":0,\"fills\":0,\"halted\":false,\"at\":\"2026-11-04T18:46:06.595Z\"}}",
+  "20:45:00Z ORDER pair-20261104-o-GILD pending_new",
+  "20:45:00Z ORDER pair-20261104-o-PFE pending_new",
+  "20:50:00Z cancel entry orb-20261104-CI",
+  "20:50:00Z cancel entry orb-20261104-FBIN",
+  "20:50:00Z cancel entry orb-20261104-NXT",
+  "20:50:00Z cancel entry orb-20261104-VRDN",
+  "20:55:05Z ORDER orbx-20261104-CMI pending_new",
+  "20:56:25Z books {\"orb\":{\"pnl\":-2491.549857999995,\"fills\":160,\"halted\":false,\"at\":\"2026-11-04T20:56:25.742Z\"},\"fade\":{\"pnl\":-1854.4599780000053,\"fills\":56,\"halted\":false,\"at\":\"2026-11-04T20:56:25.742Z\"},\"pair\":{\"pnl\":0.7150120000001152,\"fills\":2,\"halted\":false,\"at\":\"2026-11-04T20:56:25.742Z\"}}"
+ ],
+ "calls": 267,
+ "endedAt": "2026-11-04T20:56:25.742Z"
+}
