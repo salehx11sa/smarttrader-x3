@@ -1,0 +1,186 @@
+{
+ "version": "x3-1.4",
+ "trading": true,
+ "startedAt": "2026-11-05T18:46:06.926Z",
+ "runId": "42080113225",
+ "phases": {
+  "pairs": {
+   "at": "2026-11-05T20:45:00.521Z",
+   "acts": [
+    {
+     "pair": "AXP/COF",
+     "pa": 325.71,
+     "pb": 204.31,
+     "act": "none",
+     "spread": 0.025124958227167093,
+     "sigma": 0.039841
+    },
+    {
+     "pair": "BAC/JPM",
+     "pa": 50.145,
+     "pb": 338.01,
+     "act": "none",
+     "spread": -0.02760007155040567,
+     "sigma": 0.033676
+    },
+    {
+     "pair": "HD/SYK",
+     "pa": 349.77,
+     "pb": 333.57,
+     "act": "none",
+     "spread": 0.007595627232966029,
+     "sigma": 0.03909
+    },
+    {
+     "pair": "COP/XOM",
+     "pa": 136.55,
+     "pb": 166.46,
+     "act": "none",
+     "spread": -0.003070880671062426,
+     "sigma": 0.04689
+    },
+    {
+     "pair": "KO/PM",
+     "pa": 95.82,
+     "pb": 201.75,
+     "act": "none",
+     "spread": 0.022115174081989375,
+     "sigma": 0.04524
+    },
+    {
+     "pair": "DIS/MA",
+     "pa": 117.39,
+     "pb": 654.59,
+     "act": "none",
+     "spread": -0.006414123056905918,
+     "sigma": 0.050429
+    },
+    {
+     "pair": "GILD/PFE",
+     "pa": 167.55,
+     "pb": 30.025,
+     "act": "hold",
+     "spread": 0.07392963782351136,
+     "sigma": 0.047204
+    },
+    {
+     "pair": "AZO/TMUS",
+     "pa": 3298.11,
+     "pb": 160,
+     "act": "none",
+     "spread": -0.06143740252641283,
+     "sigma": 0.054945
+    },
+    {
+     "pair": "COST/NEE",
+     "pa": 1065.46,
+     "pb": 88.19,
+     "act": "none",
+     "spread": -0.012243454046815483,
+     "sigma": 0.043856
+    },
+    {
+     "pair": "DE/JNJ",
+     "pa": 664.525,
+     "pb": 272.47,
+     "act": "none",
+     "spread": -0.00438898627571227,
+     "sigma": 0.055851
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -3390.3498379999983,
+   "fills": 184,
+   "halted": false,
+   "at": "2026-11-05T20:57:24.720Z"
+  },
+  "fade": {
+   "pnl": -1730.8795970000056,
+   "fills": 64,
+   "halted": false,
+   "at": "2026-11-05T20:57:24.720Z"
+  },
+  "pair": {
+   "pnl": 24.66501200000016,
+   "fills": 2,
+   "halted": false,
+   "at": "2026-11-05T20:57:24.720Z"
+  }
+ },
+ "date": "2026-11-05",
+ "open": "2026-11-05T14:30:00.000Z",
+ "close": "2026-11-05T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-05T20:55:05.476Z",
+   "symbol": "TPR",
+   "qty": "42",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261105-TPR",
+   "sent": true,
+   "result": "pending_new",
+   "id": "f9ce7204-94b2-40b1-b9c1-d54dee59e699"
+  },
+  {
+   "at": "2026-11-05T20:55:16.715Z",
+   "symbol": "VCYT",
+   "qty": "229",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "orbx-20261105-VCYT",
+   "sent": true,
+   "result": "pending_new",
+   "id": "6fceb69d-86fe-4f7a-8bcc-5288e6f3fd52"
+  },
+  {
+   "at": "2026-11-05T20:55:27.924Z",
+   "symbol": "VNT",
+   "qty": "142",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261105-VNT",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 142, available: 0)"
+  },
+  {
+   "at": "2026-11-05T20:55:48.547Z",
+   "symbol": "VNT",
+   "qty": "142",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261105-VNT-r2",
+   "sent": true,
+   "result": "pending_new",
+   "id": "67fd3903-82f6-468f-957f-f60ff161d337"
+  }
+ ],
+ "log": [
+  "18:46:07Z books {\"orb\":{\"pnl\":-2989.599838,\"fills\":183,\"halted\":false,\"at\":\"2026-11-05T18:46:07.763Z\"},\"fade\":{\"pnl\":-1664.1495450000057,\"fills\":62,\"halted\":false,\"at\":\"2026-11-05T18:46:07.763Z\"},\"pair\":{\"pnl\":23.65501200000017,\"fills\":2,\"halted\":false,\"at\":\"2026-11-05T18:46:07.763Z\"}}",
+  "20:50:00Z cancel entry orb-20261105-TOST",
+  "20:50:00Z cancel entry orb-20261105-LMND",
+  "20:50:00Z cancel entry orb-20261105-ZTS",
+  "20:50:00Z cancel entry orb-20261105-RELY",
+  "20:50:00Z cancel entry orb-20261105-U",
+  "20:50:00Z cancel entry orb-20261105-Z",
+  "20:50:01Z cancel entry orb-20261105-FWONK",
+  "20:50:01Z cancel entry orb-20261105-CCOI",
+  "20:55:05Z ORDER fadex-20261105-TPR pending_new",
+  "20:55:16Z could not clear open orders for VCYT",
+  "20:55:16Z ORDER orbx-20261105-VCYT pending_new",
+  "20:55:27Z could not clear open orders for VNT",
+  "20:55:27Z ORDER-ERR fadex-20261105-VNT POST /v2/orders -> 403 insufficient qty available for order (requested: 142, available: 0)",
+  "20:55:48Z still open after close attempt 1 VNT",
+  "20:56:03Z ORDER fadex-20261105-VNT-r2 pending_new",
+  "20:57:24Z books {\"orb\":{\"pnl\":-3390.3498379999983,\"fills\":184,\"halted\":false,\"at\":\"2026-11-05T20:57:24.720Z\"},\"fade\":{\"pnl\":-1730.8795970000056,\"fills\":64,\"halted\":false,\"at\":\"2026-11-05T20:57:24.720Z\"},\"pair\":{\"pnl\":24.66501200000016,\"fills\":2,\"halted\":false,\"at\":\"2026-11-05T20:57:24.720Z\"}}"
+ ],
+ "calls": 303,
+ "endedAt": "2026-11-05T20:57:24.721Z"
+}
