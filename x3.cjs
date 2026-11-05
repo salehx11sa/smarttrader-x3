@@ -7,7 +7,7 @@
    Usage: node x3.cjs            (env: APCA_KEY, APCA_SEC, TRADING_ENABLED, X3_MAX_MIN optional)                        */
 'use strict';
 const fs = require('fs'), path = require('path');
-const VERSION = 'x3-1.3';
+const VERSION = 'x3-1.4';
 const PAPER = 'https://paper-api.alpaca.markets';
 const DATA = 'https://data.alpaca.markets';
 const PAIRS = JSON.parse(fs.readFileSync(path.join(__dirname, 'pairs.json'), 'utf8'));
@@ -249,7 +249,8 @@ async function protectPositions(D, pairSyms) { /* x3-1.1: every open ORB/FADE po
       const book = e.client_order_id.split('-')[0].replace('orbm', 'orb'); const n = 1 + tod.filter(o => o.client_order_id.startsWith(`${book}p-${D}-${p.symbol}`)).length; const cid = `${book}p-${D}-${p.symbol}-${n}`;
       const beyond = +p.qty > 0 ? px <= stop : px >= stop;
       say('PROTECT', p.symbol, p.qty, 'px', px, 'stop', stop, beyond ? 'close' : 'stop');
-      if (beyond) toClose.push({ p, cid }); else await submit({ symbol: p.symbol, qty: String(Math.abs(+p.qty)), side: +p.qty > 0 ? 'sell' : 'buy', type: 'stop', stop_price: stop.toFixed(2), time_in_force: 'day', client_order_id: cid });
+      if (beyond) toClose.push({ p, cid }); else { const r = await submit({ symbol: p.symbol, qty: String(Math.abs(+p.qty)), side: +p.qty > 0 ? 'sell' : 'buy', type: 'stop', stop_price: stop.toFixed(2), time_in_force: 'day', client_order_id: cid });
+        if (!r && TRADING && /stop price must be/.test((orders[orders.length - 1] || {}).result || '')) toClose.push({ p, cid: cid + 'c' }); } /* x3-1.4: the broker refuses the stop because the price is at/through it -> close */
     }
     if (toClose.length) await closeMany(toClose);
   } catch (err) { say('PROTECT error', err.message); }
