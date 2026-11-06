@@ -1,0 +1,182 @@
+{
+ "version": "x3-1.4",
+ "trading": true,
+ "startedAt": "2026-11-06T18:46:05.808Z",
+ "runId": "42271280613",
+ "phases": {
+  "pairs": {
+   "at": "2026-11-06T20:45:00.182Z",
+   "acts": [
+    {
+     "pair": "AXP/COF",
+     "pa": 321.055,
+     "pb": 201.64,
+     "act": "none",
+     "spread": 0.023524350011807416,
+     "sigma": 0.039841
+    },
+    {
+     "pair": "BAC/JPM",
+     "pa": 49.6,
+     "pb": 335.375,
+     "act": "none",
+     "spread": -0.03043254353341618,
+     "sigma": 0.033676
+    },
+    {
+     "pair": "HD/SYK",
+     "pa": 343.67,
+     "pb": 324.015,
+     "act": "none",
+     "spread": 0.01963157376729674,
+     "sigma": 0.03909
+    },
+    {
+     "pair": "COP/XOM",
+     "pa": 136.68,
+     "pb": 165.93,
+     "act": "none",
+     "spread": 0.0006840434879485935,
+     "sigma": 0.04689
+    },
+    {
+     "pair": "KO/PM",
+     "pa": 95.78,
+     "pb": 198.265,
+     "act": "none",
+     "spread": 0.03915502010648597,
+     "sigma": 0.04524
+    },
+    {
+     "pair": "DIS/MA",
+     "pa": 117.065,
+     "pb": 655.3,
+     "act": "none",
+     "spread": -0.010441048809624931,
+     "sigma": 0.050429
+    },
+    {
+     "pair": "GILD/PFE",
+     "pa": 167.39,
+     "pb": 29.235,
+     "act": "hold",
+     "spread": 0.09921128602236018,
+     "sigma": 0.047204
+    },
+    {
+     "pair": "AZO/TMUS",
+     "pa": 3233.01,
+     "pb": 162.72,
+     "act": "none",
+     "spread": -0.10033780695182326,
+     "sigma": 0.054945
+    },
+    {
+     "pair": "COST/NEE",
+     "pa": 1057,
+     "pb": 87.345,
+     "act": "none",
+     "spread": -0.010383133356574259,
+     "sigma": 0.043856
+    },
+    {
+     "pair": "DE/JNJ",
+     "pa": 674.605,
+     "pb": 274.985,
+     "act": "none",
+     "spread": 0.0016777302884387613,
+     "sigma": 0.055851
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -4931.150307999993,
+   "fills": 225,
+   "halted": true,
+   "at": "2026-11-06T20:57:24.165Z"
+  },
+  "fade": {
+   "pnl": -2245.1895720000093,
+   "fills": 75,
+   "halted": false,
+   "at": "2026-11-06T20:57:24.166Z"
+  },
+  "pair": {
+   "pnl": 2.360012000000097,
+   "fills": 2,
+   "halted": false,
+   "at": "2026-11-06T20:57:24.166Z"
+  }
+ },
+ "date": "2026-11-06",
+ "open": "2026-11-06T14:30:00.000Z",
+ "close": "2026-11-06T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-06T20:55:02.465Z",
+   "symbol": "BHF",
+   "qty": "137",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261106-BHF",
+   "sent": true,
+   "result": "pending_new",
+   "id": "1bbdc86f-011e-41ee-993d-76ad63432473"
+  },
+  {
+   "at": "2026-11-06T20:55:12.976Z",
+   "symbol": "ETON",
+   "qty": "104",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261106-ETON",
+   "sent": true,
+   "result": "pending_new",
+   "id": "81df6e8a-99a0-439e-bc62-ad74f4e7f21a"
+  },
+  {
+   "at": "2026-11-06T20:55:43.449Z",
+   "symbol": "ETON",
+   "qty": "103",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261106-ETON-r2",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 103, available: 0)"
+  },
+  {
+   "at": "2026-11-06T20:56:03.641Z",
+   "symbol": "ETON",
+   "qty": "12",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "fadex-20261106-ETON-r3",
+   "sent": true,
+   "result": "pending_new",
+   "id": "4eaa37c8-e2e5-4f71-a085-b5fd9c1857d9"
+  }
+ ],
+ "log": [
+  "18:46:06Z books {\"orb\":{\"pnl\":-4931.150307999993,\"fills\":225,\"halted\":true,\"at\":\"2026-11-06T18:46:06.520Z\"},\"fade\":{\"pnl\":-2126.599568000005,\"fills\":72,\"halted\":false,\"at\":\"2026-11-06T18:46:06.520Z\"},\"pair\":{\"pnl\":-9.429987999999867,\"fills\":2,\"halted\":false,\"at\":\"2026-11-06T18:46:06.520Z\"}}",
+  "20:50:00Z cancel entry orb-20261106-TTEK",
+  "20:50:00Z cancel entry orb-20261106-NIQ",
+  "20:50:00Z cancel entry orb-20261106-OUST",
+  "20:55:02Z ORDER fadex-20261106-BHF pending_new",
+  "20:55:12Z could not clear open orders for ETON",
+  "20:55:13Z ORDER fadex-20261106-ETON pending_new",
+  "20:55:33Z still open after close attempt 1 ETON",
+  "20:55:43Z could not clear open orders for ETON",
+  "20:55:43Z ORDER-ERR fadex-20261106-ETON-r2 POST /v2/orders -> 403 insufficient qty available for order (requested: 103, available: 0)",
+  "20:56:03Z still open after close attempt 2 ETON",
+  "20:56:03Z ORDER fadex-20261106-ETON-r3 pending_new",
+  "20:57:24Z books {\"orb\":{\"pnl\":-4931.150307999993,\"fills\":225,\"halted\":true,\"at\":\"2026-11-06T20:57:24.165Z\"},\"fade\":{\"pnl\":-2245.1895720000093,\"fills\":75,\"halted\":false,\"at\":\"2026-11-06T20:57:24.166Z\"},\"pair\":{\"pnl\":2.360012000000097,\"fills\":2,\"halted\":false,\"at\":\"2026-11-06T20:57:24.166Z\"}}"
+ ],
+ "calls": 298,
+ "endedAt": "2026-11-06T20:57:24.166Z"
+}
