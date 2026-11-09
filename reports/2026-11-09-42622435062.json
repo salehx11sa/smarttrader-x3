@@ -1,0 +1,117 @@
+{
+ "version": "x3-1.4",
+ "trading": true,
+ "startedAt": "2026-11-09T13:05:48.336Z",
+ "runId": "42622435062",
+ "phases": {
+  "universe": {
+   "n": 2092,
+   "at": "2026-11-09T13:06:51.356Z"
+  },
+  "decisions": {
+   "at": "2026-11-09T14:35:53.885Z",
+   "withBar": 1701,
+   "orb": [],
+   "fade": [
+    {
+     "sym": "FERG",
+     "gap": 0.05896448438168589,
+     "z": 2.974004662915632,
+     "atr": 6.882499999999998,
+     "ref": 257.81,
+     "stop": 261.26,
+     "qty": 23
+    },
+    {
+     "sym": "HE",
+     "gap": 0.0641330166270786,
+     "z": 2.931719170854626,
+     "atr": 0.320714285714286,
+     "ref": 9.045,
+     "stop": 9.21,
+     "qty": 663
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -4931.150307999993,
+   "fills": 225,
+   "halted": true,
+   "at": "2026-11-09T13:05:48.858Z"
+  },
+  "fade": {
+   "pnl": -2245.1895720000093,
+   "fills": 75,
+   "halted": false,
+   "at": "2026-11-09T13:05:48.859Z"
+  },
+  "pair": {
+   "pnl": -3.129987999999912,
+   "fills": 2,
+   "halted": false,
+   "at": "2026-11-09T13:05:48.859Z"
+  }
+ },
+ "date": "2026-11-09",
+ "open": "2026-11-09T14:30:00.000Z",
+ "close": "2026-11-09T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-09T14:35:53.885Z",
+   "symbol": "FERG",
+   "qty": "23",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "261.26"
+   },
+   "client_order_id": "fade-20261109-FERG",
+   "sent": true,
+   "result": "pending_new",
+   "id": "9907570a-508f-4491-80d0-28f2c15559eb"
+  },
+  {
+   "at": "2026-11-09T14:35:53.934Z",
+   "symbol": "HE",
+   "qty": "663",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "9.21"
+   },
+   "client_order_id": "fade-20261109-HE",
+   "sent": true,
+   "result": "rejected:stop_loss.stop_price must be >= base_price + 0.01"
+  },
+  {
+   "at": "2026-11-09T14:36:54.177Z",
+   "symbol": "FERG",
+   "qty": "22",
+   "side": "buy",
+   "type": "stop",
+   "stop_price": "261.26",
+   "time_in_force": "day",
+   "client_order_id": "fadep-20261109-FERG-1",
+   "sent": true,
+   "result": "error:POST /v2/orders -> 403 insufficient qty available for order (requested: 22, available: 0)"
+  }
+ ],
+ "log": [
+  "13:05:48Z books {\"orb\":{\"pnl\":-4931.150307999993,\"fills\":225,\"halted\":true,\"at\":\"2026-11-09T13:05:48.858Z\"},\"fade\":{\"pnl\":-2245.1895720000093,\"fills\":75,\"halted\":false,\"at\":\"2026-11-09T13:05:48.859Z\"},\"pair\":{\"pnl\":-3.129987999999912,\"fills\":2,\"halted\":false,\"at\":\"2026-11-09T13:05:48.859Z\"}}",
+  "13:05:49Z assets 5704",
+  "13:06:11Z liquid universe 2092",
+  "14:35:53Z ORDER fade-20261109-FERG pending_new",
+  "14:35:53Z ORDER fade-20261109-HE rejected:stop_loss.stop_price must be >= base_price + 0.01",
+  "14:36:54Z PROTECT FERG -22 px 257.315 stop 261.26 stop",
+  "14:36:54Z ORDER-ERR fadep-20261109-FERG-1 POST /v2/orders -> 403 insufficient qty available for order (requested: 22, available: 0)",
+  "18:45:48Z deadline before pairs time; next run continues"
+ ],
+ "calls": 709,
+ "endedAt": "2026-11-09T18:45:48.338Z"
+}
