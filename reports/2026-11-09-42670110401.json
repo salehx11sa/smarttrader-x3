@@ -1,0 +1,152 @@
+{
+ "version": "x3-1.4",
+ "trading": true,
+ "startedAt": "2026-11-09T18:46:01.553Z",
+ "runId": "42670110401",
+ "phases": {
+  "pairs": {
+   "at": "2026-11-09T20:45:00.941Z",
+   "acts": [
+    {
+     "pair": "AXP/COF",
+     "pa": 325.27,
+     "pb": 199.5,
+     "act": "none",
+     "spread": 0.047610132221389434,
+     "sigma": 0.039841
+    },
+    {
+     "pair": "BAC/JPM",
+     "pa": 50.745,
+     "pb": 342.365,
+     "act": "none",
+     "spread": -0.028867068231428927,
+     "sigma": 0.033676
+    },
+    {
+     "pair": "HD/SYK",
+     "pa": 355.645,
+     "pb": 326.84,
+     "act": "none",
+     "spread": 0.04787587918127745,
+     "sigma": 0.03909
+    },
+    {
+     "pair": "COP/XOM",
+     "pa": 134.84,
+     "pb": 164.87,
+     "act": "none",
+     "spread": -0.005731837637000248,
+     "sigma": 0.04689
+    },
+    {
+     "pair": "KO/PM",
+     "pa": 95.905,
+     "pb": 193.67,
+     "act": "none",
+     "spread": 0.0635393559949291,
+     "sigma": 0.04524
+    },
+    {
+     "pair": "DIS/MA",
+     "pa": 119.15,
+     "pb": 657.95,
+     "act": "none",
+     "spread": 0.003839471372148129,
+     "sigma": 0.050429
+    },
+    {
+     "pair": "GILD/PFE",
+     "pa": 169.94,
+     "pb": 29.365,
+     "act": "hold",
+     "spread": 0.11122424529243302,
+     "sigma": 0.047204
+    },
+    {
+     "pair": "AZO/TMUS",
+     "pa": 3268.83,
+     "pb": 167.785,
+     "act": "open",
+     "spread": -0.12371065642211598,
+     "shortSym": "TMUS",
+     "longSym": "AZO",
+     "sigma": 0.054945
+    },
+    {
+     "pair": "COST/NEE",
+     "pa": 1062.76,
+     "pb": 87.045,
+     "act": "none",
+     "spread": -0.0009881128878677092,
+     "sigma": 0.043856
+    },
+    {
+     "pair": "DE/JNJ",
+     "pa": 690.28,
+     "pb": 281.81,
+     "act": "none",
+     "spread": 0.00006591132931310639,
+     "sigma": 0.055851
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -4931.150307999993,
+   "fills": 225,
+   "halted": true,
+   "at": "2026-11-09T20:56:01.478Z"
+  },
+  "fade": {
+   "pnl": -2367.5195800000065,
+   "fills": 77,
+   "halted": false,
+   "at": "2026-11-09T20:56:01.479Z"
+  },
+  "pair": {
+   "pnl": -50.08688799999936,
+   "fills": 4,
+   "halted": false,
+   "at": "2026-11-09T20:56:01.479Z"
+  }
+ },
+ "date": "2026-11-09",
+ "open": "2026-11-09T14:30:00.000Z",
+ "close": "2026-11-09T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-09T20:45:00.459Z",
+   "symbol": "TMUS",
+   "qty": "19",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "pair-20261109-o-TMUS",
+   "sent": true,
+   "result": "pending_new",
+   "id": "2e4b073c-d062-406b-a166-2fa9b9713d98"
+  },
+  {
+   "at": "2026-11-09T20:45:00.642Z",
+   "symbol": "AZO",
+   "qty": "1",
+   "side": "buy",
+   "type": "market",
+   "time_in_force": "day",
+   "client_order_id": "pair-20261109-o-AZO",
+   "sent": true,
+   "result": "pending_new",
+   "id": "b4eb6958-1600-4e05-a438-deda88f508a3"
+  }
+ ],
+ "log": [
+  "18:46:02Z books {\"orb\":{\"pnl\":-4931.150307999993,\"fills\":225,\"halted\":true,\"at\":\"2026-11-09T18:46:02.609Z\"},\"fade\":{\"pnl\":-2367.5195800000065,\"fills\":77,\"halted\":false,\"at\":\"2026-11-09T18:46:02.609Z\"},\"pair\":{\"pnl\":-9.87498800000003,\"fills\":2,\"halted\":false,\"at\":\"2026-11-09T18:46:02.610Z\"}}",
+  "20:45:00Z ORDER pair-20261109-o-TMUS pending_new",
+  "20:45:00Z ORDER pair-20261109-o-AZO pending_new",
+  "20:56:01Z books {\"orb\":{\"pnl\":-4931.150307999993,\"fills\":225,\"halted\":true,\"at\":\"2026-11-09T20:56:01.478Z\"},\"fade\":{\"pnl\":-2367.5195800000065,\"fills\":77,\"halted\":false,\"at\":\"2026-11-09T20:56:01.479Z\"},\"pair\":{\"pnl\":-50.08688799999936,\"fills\":4,\"halted\":false,\"at\":\"2026-11-09T20:56:01.479Z\"}}"
+ ],
+ "calls": 251,
+ "endedAt": "2026-11-09T20:56:01.479Z"
+}
