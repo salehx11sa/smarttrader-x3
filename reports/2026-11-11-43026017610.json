@@ -1,0 +1,78 @@
+{
+ "version": "x3-1.4",
+ "trading": true,
+ "startedAt": "2026-11-11T13:05:50.215Z",
+ "runId": "43026017610",
+ "phases": {
+  "universe": {
+   "n": 2112,
+   "at": "2026-11-11T13:07:45.331Z"
+  },
+  "decisions": {
+   "at": "2026-11-11T14:36:12.095Z",
+   "withBar": 1626,
+   "orb": [],
+   "fade": [
+    {
+     "sym": "AZTA",
+     "gap": 0.1277173913043479,
+     "z": 2.7895586657195675,
+     "atr": 2.182657142857144,
+     "ref": 45.05,
+     "stop": 46.15,
+     "qty": 133
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -4931.150307999993,
+   "fills": 225,
+   "halted": true,
+   "at": "2026-11-11T13:05:51.525Z"
+  },
+  "fade": {
+   "pnl": -2367.5195800000065,
+   "fills": 77,
+   "halted": false,
+   "at": "2026-11-11T13:05:51.525Z"
+  },
+  "pair": {
+   "pnl": -115.56998799999974,
+   "fills": 4,
+   "halted": false,
+   "at": "2026-11-11T13:05:51.525Z"
+  }
+ },
+ "date": "2026-11-11",
+ "open": "2026-11-11T14:30:00.000Z",
+ "close": "2026-11-11T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-11T14:36:12.095Z",
+   "symbol": "AZTA",
+   "qty": "133",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "46.15"
+   },
+   "client_order_id": "fade-20261111-AZTA",
+   "sent": true,
+   "result": "pending_new",
+   "id": "dd280f0b-e4a3-44f1-943c-14734f1ced37"
+  }
+ ],
+ "log": [
+  "13:05:51Z books {\"orb\":{\"pnl\":-4931.150307999993,\"fills\":225,\"halted\":true,\"at\":\"2026-11-11T13:05:51.525Z\"},\"fade\":{\"pnl\":-2367.5195800000065,\"fills\":77,\"halted\":false,\"at\":\"2026-11-11T13:05:51.525Z\"},\"pair\":{\"pnl\":-115.56998799999974,\"fills\":4,\"halted\":false,\"at\":\"2026-11-11T13:05:51.525Z\"}}",
+  "13:05:51Z assets 5680",
+  "13:06:47Z liquid universe 2112",
+  "14:36:12Z ORDER fade-20261111-AZTA pending_new",
+  "18:45:50Z deadline before pairs time; next run continues"
+ ],
+ "calls": 703,
+ "endedAt": "2026-11-11T18:45:50.239Z"
+}
