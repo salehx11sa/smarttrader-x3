@@ -1,0 +1,104 @@
+{
+ "version": "x3-1.4",
+ "trading": true,
+ "startedAt": "2026-11-12T13:05:48.966Z",
+ "runId": "43223988370",
+ "phases": {
+  "universe": {
+   "n": 2115,
+   "at": "2026-11-12T13:08:28.317Z"
+  },
+  "decisions": {
+   "at": "2026-11-12T14:36:17.862Z",
+   "withBar": 1631,
+   "orb": [],
+   "fade": [
+    {
+     "sym": "TTEK",
+     "gap": 0.10595586280244618,
+     "z": 3.8104133171191354,
+     "atr": 1.322928571428571,
+     "ref": 39.77,
+     "stop": 40.44,
+     "qty": 150
+    },
+    {
+     "sym": "MBGL",
+     "gap": 0.06275100401606415,
+     "z": 2.896108575238607,
+     "atr": 0.6053571428571433,
+     "ref": 22.535,
+     "stop": 22.84,
+     "qty": 266
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -4931.150307999993,
+   "fills": 225,
+   "halted": true,
+   "at": "2026-11-12T13:05:50.108Z"
+  },
+  "fade": {
+   "pnl": -2647.2695190000086,
+   "fills": 79,
+   "halted": false,
+   "at": "2026-11-12T13:05:50.108Z"
+  },
+  "pair": {
+   "pnl": -139.08998799999972,
+   "fills": 4,
+   "halted": false,
+   "at": "2026-11-12T13:05:50.108Z"
+  }
+ },
+ "date": "2026-11-12",
+ "open": "2026-11-12T14:30:00.000Z",
+ "close": "2026-11-12T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-12T14:36:17.862Z",
+   "symbol": "TTEK",
+   "qty": "150",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "40.44"
+   },
+   "client_order_id": "fade-20261112-TTEK",
+   "sent": true,
+   "result": "pending_new",
+   "id": "8ad621ed-85e1-4d0e-b0d0-f0113f30f347"
+  },
+  {
+   "at": "2026-11-12T14:36:17.926Z",
+   "symbol": "MBGL",
+   "qty": "266",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "22.84"
+   },
+   "client_order_id": "fade-20261112-MBGL",
+   "sent": true,
+   "result": "pending_new",
+   "id": "f6fa92de-8950-4e79-9c6d-b98329cfa63d"
+  }
+ ],
+ "log": [
+  "13:05:50Z books {\"orb\":{\"pnl\":-4931.150307999993,\"fills\":225,\"halted\":true,\"at\":\"2026-11-12T13:05:50.108Z\"},\"fade\":{\"pnl\":-2647.2695190000086,\"fills\":79,\"halted\":false,\"at\":\"2026-11-12T13:05:50.108Z\"},\"pair\":{\"pnl\":-139.08998799999972,\"fills\":4,\"halted\":false,\"at\":\"2026-11-12T13:05:50.108Z\"}}",
+  "13:05:50Z assets 5677",
+  "13:06:58Z liquid universe 2115",
+  "14:36:17Z ORDER fade-20261112-TTEK pending_new",
+  "14:36:17Z ORDER fade-20261112-MBGL pending_new",
+  "18:45:48Z deadline before pairs time; next run continues"
+ ],
+ "calls": 704,
+ "endedAt": "2026-11-12T18:45:48.970Z"
+}
