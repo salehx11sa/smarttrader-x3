@@ -1,0 +1,104 @@
+{
+ "version": "x3-1.4",
+ "trading": true,
+ "startedAt": "2026-11-13T13:05:48.679Z",
+ "runId": "43430666448",
+ "phases": {
+  "universe": {
+   "n": 2106,
+   "at": "2026-11-13T13:06:46.409Z"
+  },
+  "decisions": {
+   "at": "2026-11-13T14:35:47.373Z",
+   "withBar": 1415,
+   "orb": [],
+   "fade": [
+    {
+     "sym": "STN",
+     "gap": 0.13982430453879946,
+     "z": 6.262829071299427,
+     "atr": 2.1260714285714255,
+     "ref": 84.62,
+     "stop": 85.69,
+     "qty": 70
+    },
+    {
+     "sym": "MOD",
+     "gap": 0.33661639962299716,
+     "z": 4.050921293666612,
+     "atr": 10.39782857142857,
+     "ref": 145.4,
+     "stop": 150.6,
+     "qty": 41
+    }
+   ]
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -4931.150307999993,
+   "fills": 225,
+   "halted": true,
+   "at": "2026-11-13T13:05:49.488Z"
+  },
+  "fade": {
+   "pnl": -2783.4594690000085,
+   "fills": 83,
+   "halted": false,
+   "at": "2026-11-13T13:05:49.488Z"
+  },
+  "pair": {
+   "pnl": -91.97118799999953,
+   "fills": 4,
+   "halted": false,
+   "at": "2026-11-13T13:05:49.488Z"
+  }
+ },
+ "date": "2026-11-13",
+ "open": "2026-11-13T14:30:00.000Z",
+ "close": "2026-11-13T21:00:00.000Z",
+ "orders": [
+  {
+   "at": "2026-11-13T14:35:47.373Z",
+   "symbol": "STN",
+   "qty": "70",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "85.69"
+   },
+   "client_order_id": "fade-20261113-STN",
+   "sent": true,
+   "result": "pending_new",
+   "id": "6514727f-2b46-4022-965d-6ff287e84e14"
+  },
+  {
+   "at": "2026-11-13T14:35:47.426Z",
+   "symbol": "MOD",
+   "qty": "41",
+   "side": "sell",
+   "type": "market",
+   "time_in_force": "day",
+   "order_class": "oto",
+   "stop_loss": {
+    "stop_price": "150.60"
+   },
+   "client_order_id": "fade-20261113-MOD",
+   "sent": true,
+   "result": "pending_new",
+   "id": "f586dc47-d0e0-409f-a0b2-518b7355741e"
+  }
+ ],
+ "log": [
+  "13:05:49Z books {\"orb\":{\"pnl\":-4931.150307999993,\"fills\":225,\"halted\":true,\"at\":\"2026-11-13T13:05:49.488Z\"},\"fade\":{\"pnl\":-2783.4594690000085,\"fills\":83,\"halted\":false,\"at\":\"2026-11-13T13:05:49.488Z\"},\"pair\":{\"pnl\":-91.97118799999953,\"fills\":4,\"halted\":false,\"at\":\"2026-11-13T13:05:49.488Z\"}}",
+  "13:05:49Z assets 5681",
+  "13:06:10Z liquid universe 2106",
+  "14:35:47Z ORDER fade-20261113-STN pending_new",
+  "14:35:47Z ORDER fade-20261113-MOD pending_new",
+  "18:45:48Z deadline before pairs time; next run continues"
+ ],
+ "calls": 706,
+ "endedAt": "2026-11-13T18:45:48.682Z"
+}
