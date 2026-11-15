@@ -7,7 +7,7 @@
    Usage: node x3.cjs            (env: APCA_KEY, APCA_SEC, TRADING_ENABLED, X3_MAX_MIN optional)                        */
 'use strict';
 const fs = require('fs'), path = require('path');
-const VERSION = 'x3-1.4';
+const VERSION = 'x3-1.5';
 const PAPER = 'https://paper-api.alpaca.markets';
 const DATA = 'https://data.alpaca.markets';
 const PAIRS = JSON.parse(fs.readFileSync(path.join(__dirname, 'pairs.json'), 'utf8'));
@@ -15,6 +15,8 @@ const PAIRS = JSON.parse(fs.readFileSync(path.join(__dirname, 'pairs.json'), 'ut
 const R = Object.freeze({
   start: '2026-10-26', end: '2026-12-18', accountPrefix: 'PA',
   book: 30000, killLossUsd: 4500,
+  /* x3-1.5: manual stop by Saleh's decision (2026-11-15): no new FADE entries from this NY date on. Exits, protection and flatten are unchanged. */
+  manualHalt: Object.freeze({ fade: '2026-11-16' }),
   orb: Object.freeze({ top: 20, minPrice: 5, minAvgVol: 1e6, minAtr: 0.5, rvolMin: 1.0, lookback: 14, stopAtrFrac: 0.10, riskUsd: 300, maxNotional: 6000, lastEntryMinAfterOpen: 15 }),
   fade: Object.freeze({ top: 5, minPrice: 5, minDollarVol: 20e6, minGap: 0.04, minZ: 2.5, stopAtrFrac: 0.5, riskUsd: 300, maxNotional: 6000 }),
   pair: Object.freeze({ legUsd: 1500, kSigma: 2.0, minBeforeClose: 15 }),
@@ -303,6 +305,7 @@ async function doPairs(rep, D, closeAll, pos, halted) {
   }
   rep.phases.pairs = { at: new Date().toISOString(), acts };
 }
+function isManualHalt(book, today) { const d = R.manualHalt[book]; return !!(d && today && today >= d); } /* x3-1.5 */
 async function bookStatus(rep, today) {
   const all = []; let until = null;
   for (let i = 0; i < 40; i++) { const q = new URLSearchParams({ status: 'closed', after: R.start + 'T00:00:00Z', limit: '500', nested: 'true', direction: 'desc' }); if (until) q.set('until', until); const b = (await api(PAPER, 'GET', '/v2/orders?' + q)).j; all.push(...b); if (b.length < 500) break; until = b[b.length - 1].submitted_at; }
@@ -312,7 +315,8 @@ async function bookStatus(rep, today) {
   const owner = {}; for (const o of [...flat].sort((x, y) => (x.filled_at || '') < (y.filled_at || '') ? -1 : 1)) if (+o.filled_qty && /^(orb|fade)$/.test(o.book)) owner[o.symbol] = o.book;
   for (const o of flat) if (o.book === 'other' && owner[o.symbol]) o.book = owner[o.symbol]; /* x3-1.3: closes recorded under 'other' (e.g. others-20261029-DRS) belong to the symbol's book */
   for (const b of ['orb', 'fade', 'pair']) { const os = flat.filter(o => o.book === b); const syms = b === 'pair' ? [...pairSyms] : Object.keys(owner).filter(s => owner[s] === b && !pairSyms.has(s));
-    const r = cashflowPnl(os, PB, syms); halted[b] = r.pnl <= -R.killLossUsd; rep.books[b] = { ...r, halted: halted[b], at: new Date().toISOString() }; }
+    const r = cashflowPnl(os, PB, syms); const kill = r.pnl <= -R.killLossUsd; const manual = isManualHalt(b, today); halted[b] = kill || manual;
+    rep.books[b] = { ...r, halted: halted[b], ...(manual ? { manualHalt: R.manualHalt[b] } : {}), at: new Date().toISOString() }; }
   say('books', JSON.stringify(rep.books)); return halted;
 }
 function finish(rep) {
@@ -321,5 +325,5 @@ function finish(rep) {
   fs.writeFileSync(path.join(dir, `${rep.date || 'nodate'}-${rep.runId}.json`), JSON.stringify(rep, null, 1));
   say('done');
 }
-module.exports = { main, clock, orders, dailyStats, orbPick, fadePick, pairAction, pairQty, cashflowPnl, nyToUtc, ny, up2, dn2, R, buildUniverse, multiBars, api, PAIRS, DATA, PAPER };
+module.exports = { main, clock, orders, isManualHalt, dailyStats, orbPick, fadePick, pairAction, pairQty, cashflowPnl, nyToUtc, ny, up2, dn2, R, buildUniverse, multiBars, api, PAIRS, DATA, PAPER };
 if (require.main === module) main().catch(e => { say('FATAL', e.message); try { finish({ version: VERSION, fatal: e.message, runId: process.env.GITHUB_RUN_ID || 'local', date: ny(clock.now()).date, books: {} }); } catch (_) {} process.exitCode = 1; });

@@ -37,4 +37,7 @@ const r = X.cashflowPnl([{ side: 'sell', filled_qty: '10', filled_avg_price: '20
 assert.strictEqual(r.pnl, 5); assert.strictEqual(r.fills, 2);
 // pairs file
 assert.strictEqual(X.PAIRS.pairs.length, 10); const all = X.PAIRS.pairs.flatMap(p => [p.a, p.b]); assert.strictEqual(new Set(all).size, 20);
+// x3-1.5: manual FADE halt from 2026-11-16 (Saleh, 2026-11-15); other books untouched
+assert.strictEqual(X.isManualHalt('fade', '2026-11-13'), false); assert.strictEqual(X.isManualHalt('fade', '2026-11-16'), true); assert.strictEqual(X.isManualHalt('fade', '2026-12-01'), true);
+assert.strictEqual(X.isManualHalt('pair', '2026-11-16'), false); assert.strictEqual(X.isManualHalt('orb', '2026-11-16'), false); assert.strictEqual(X.isManualHalt('fade', null), false);
 console.log('ALL TESTS PASS');
