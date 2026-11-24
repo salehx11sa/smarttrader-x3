@@ -1,0 +1,51 @@
+{
+ "version": "x3-1.5",
+ "trading": true,
+ "startedAt": "2026-11-24T13:05:48.934Z",
+ "runId": "45399879950",
+ "phases": {
+  "universe": {
+   "n": 2090,
+   "at": "2026-11-24T13:06:19.067Z"
+  },
+  "decisions": {
+   "at": "2026-11-24T14:35:15.868Z",
+   "withBar": 1630,
+   "orb": [],
+   "fade": []
+  }
+ },
+ "books": {
+  "orb": {
+   "pnl": -4931.150307999993,
+   "fills": 225,
+   "halted": true,
+   "at": "2026-11-24T13:05:49.669Z"
+  },
+  "fade": {
+   "pnl": -2675.3594740000044,
+   "fills": 89,
+   "halted": true,
+   "manualHalt": "2026-11-16",
+   "at": "2026-11-24T13:05:49.669Z"
+  },
+  "pair": {
+   "pnl": -90.297188,
+   "fills": 10,
+   "halted": false,
+   "at": "2026-11-24T13:05:49.669Z"
+  }
+ },
+ "date": "2026-11-24",
+ "open": "2026-11-24T14:30:00.000Z",
+ "close": "2026-11-24T21:00:00.000Z",
+ "orders": [],
+ "log": [
+  "13:05:49Z books {\"orb\":{\"pnl\":-4931.150307999993,\"fills\":225,\"halted\":true,\"at\":\"2026-11-24T13:05:49.669Z\"},\"fade\":{\"pnl\":-2675.3594740000044,\"fills\":89,\"halted\":true,\"manualHalt\":\"2026-11-16\",\"at\":\"2026-11-24T13:05:49.669Z\"},\"pair\":{\"pnl\":-90.297188,\"fills\":10,\"halted\":false,\"at\":\"2026-11-24T13:05:49.669Z\"}}",
+  "13:05:49Z assets 5676",
+  "13:05:52Z liquid universe 2090",
+  "18:45:48Z deadline before pairs time; next run continues"
+ ],
+ "calls": 704,
+ "endedAt": "2026-11-24T18:45:48.962Z"
+}
