@@ -1,0 +1,15 @@
+{
+ "version": "x3-1.5",
+ "trading": true,
+ "startedAt": "2026-11-26T22:08:14.482Z",
+ "runId": "45902781716",
+ "phases": {},
+ "books": {},
+ "date": "2026-11-26",
+ "orders": [],
+ "log": [
+  "22:08:14Z market closed today"
+ ],
+ "calls": 2,
+ "endedAt": "2026-11-26T22:08:14.651Z"
+}
